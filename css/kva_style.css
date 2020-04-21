@@ -9,6 +9,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
    /* Margin bottom by footer height */
   margin-bottom: 60px;
+  bgcolor: black;
 }
 .container {
 	width:95%;
