@@ -1267,7 +1267,7 @@ width:100% !important;
 }
 /******14.4.2020******/
 .Top-Nav {
-	box-shadow: inset 0px -8px 10px -8px #D8B446;
+	/*box-shadow: inset 0px -8px 10px -8px #D8B446;*/
 	border-bottom: 2px solid #0e600e;
 }
 #navbar-collapse-search ul li a{
@@ -1332,4 +1332,47 @@ section.top-space{
 	padding: 8px;
 	color: black;
 	content: "/\00a0";
+}
+.logo-bar img{
+	width:100%;
+}
+#nav2 span{
+	background-color:#333;
+}
+/****Media Queries****/
+
+@media screen and (min-width: 0px) and (max-width:320px){
+	.navbar ul.nav li a {
+		color: #000;
+		font-size: 15px;
+		vertical-align: middle;
+		padding-bottom: 5px;
+		padding-top: 20px;
+		text-align: center;
+		padding: 20px 5px 5px 5px;
+	}
+}
+@media screen and (min-width: 320px) and (max-width:540px){
+	.logo-bar img{
+		width:70%;
+	}
+	.navbar ul.nav li a {
+		color: #000;
+		font-size: 16px;
+		vertical-align: middle;
+		padding-bottom: 5px;
+		padding-top: 20px;
+		text-align: center;
+		padding: 20px 5px 5px 5px;
+	}
+}
+@media screen and (min-width: 540px) and (max-width:600px){
+	.logo-bar img{
+		width:60%;
+	}
+}
+@media screen and (min-width: 600px) and (max-width:768px){
+	.logo-bar img{
+		width:50%;
+	}
 }
