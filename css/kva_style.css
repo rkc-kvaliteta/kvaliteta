@@ -772,6 +772,8 @@ border-color: #0e600e;
 /**************4.8  Modal**************************/
 .modal{
   z-index: 10000 !important;
+  right: 100px;
+  left: 150px
 }
 .modal-dialog.modal-dialog-kva{
   width:100%;
