@@ -476,7 +476,9 @@ nav.affix-bottom{
 		/************* 4.2 -  Landing *************/
 .landing
 {
-	padding-top:30px;
+	/*padding-top:30px;  21.4.2020*/
+	padding:0px;
+	margin:0px !important;
 }
 
 
