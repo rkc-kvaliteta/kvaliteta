@@ -1344,7 +1344,8 @@ section.top-space{
 }
 .affix {
   top: 50px;
-  width:100%;
+  /*width:100%;*/
+  position:sticky;
 }
 
 /****Media Queries****/
