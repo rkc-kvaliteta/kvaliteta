@@ -416,8 +416,8 @@ nav.affix-bottom{
  .kva-footer {
     margin:0px auto;
     width:100%;
-    height:auto;
-    background-color:#fff;
+    /* height:auto;
+    background-color:#fff; */
     float:left;
     padding-bottom:20px;
     position: relative;
