@@ -1293,6 +1293,7 @@ section.top-space{
   list-style: none;
   background-color: #eee;
   border-radius:0px !important;
+  margin-bottom: 0px;
 }
 .kite-bread ul.breadcrumb li {
   display: inline;
