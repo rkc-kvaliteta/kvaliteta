@@ -1344,7 +1344,7 @@ section.top-space{
 }
 .affix {
   top: 47px;
-  width:25%;
+ /* width:100%;*/
   position:sticky;
 }
 
