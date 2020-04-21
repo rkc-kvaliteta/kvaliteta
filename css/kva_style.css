@@ -1379,9 +1379,3 @@ section.top-space{
 		width:50%;
 	}
 }
-
-/****Mobile View  Correction****/
-
-.col-xs-12 {
-    width: 0;
-}
