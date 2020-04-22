@@ -2,7 +2,7 @@
     <title>Verdant | Kvaliteta</title>
 </head>
 <section class="top-space" id="verdant">
-	<div class="kite-bread">
+	<div class="navbar-lower navbar-static-top kite-bread">
 		<ul class="breadcrumb">
 		 <li><a href="#home">HOME</a></li>
 		 <li><a href="#sp-it/serviceprovider">SERVICE PROVIDER-IT</a></li>
@@ -96,3 +96,11 @@ $('[data-toggle="tab"]').click(function(e) {
             $(this).find(".caption-slide").slideUp(300); //.fadeOut(205)
         });
     </script>
+<script>
+	//21.4.2020
+	
+	$('.navbar-lower').affix({
+  offset: {top: 50}
+});
+
+</script>
