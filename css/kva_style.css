@@ -1280,9 +1280,16 @@ width:100% !important;
 #row-id{
 	margin:0;
 }
-#nav2 button{
-	/*background-color:#ccc;*/
+.navbar-header a{
 	border:1px solid #0e600e;
+	margin-right:0px;
+}
+#nav2 button{
+	/*background-color:#ccc;
+	border:1px solid #0e600e;*/
+	border:none;
+	background:transparent;
+	margin-right:0PX;
 }
 #nav2 button:hover, #nav2 button:focus, #nav2 button.active{
 	box-shadow:1px 0px 3px #0e600e;
