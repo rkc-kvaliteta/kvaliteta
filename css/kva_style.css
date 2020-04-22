@@ -1291,9 +1291,9 @@ width:100% !important;
 	background:transparent;
 	margin-right:0PX;
 }
-#nav2 button:hover, #nav2 button:focus, #nav2 button.active{
+/*#nav2 button:hover, #nav2 button:focus, #nav2 button.active{
 	box-shadow:1px 0px 3px #0e600e;
-}	
+}*/	
 section.top-space{
 	margin:0px 0 0 0 !important;
 }
