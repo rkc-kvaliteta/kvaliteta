@@ -479,7 +479,7 @@ nav.affix-bottom{
 	/*padding-top:30px;  21.4.2020*/
 	padding:0px;
 	/* margin:0px !important; */
-	
+	margin-top:0px;
 	margin-left: 100px;
 	margin-right: 100px;
 }
