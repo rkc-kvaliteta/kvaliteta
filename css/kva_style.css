@@ -394,7 +394,7 @@ nav {
   position: absolute;
 }15.4.2020*/
 
-nav.affix {
+/*nav.affix {
   position: fixed;
   top: 0;
   left: 0;
@@ -404,6 +404,18 @@ nav.affix {
   background-color:#ccc;
 }
 nav.affix-bottom{
+  position: relative;
+}*/
+div.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  background-color:#fff;
+}
+div.affix-bottom{
   position: relative;
 }
 /************* 3. Footer *************/
