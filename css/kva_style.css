@@ -394,7 +394,7 @@ nav {
   position: absolute;
 }15.4.2020*/
 
-/*nav.affix {
+nav.affix {
   position: fixed;
   top: 0;
   left: 0;
@@ -405,8 +405,8 @@ nav {
 }
 nav.affix-bottom{
   position: relative;
-}*/
-div.affix {
+}
+/*div.affix {
   position: fixed;
   top: 0;
   left: 0;
@@ -417,7 +417,7 @@ div.affix {
 }
 div.affix-bottom{
   position: relative;
-}
+}*/
 /************* 3. Footer *************/
  .footer {
 	bottom: 0;
