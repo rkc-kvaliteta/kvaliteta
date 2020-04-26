@@ -1366,6 +1366,12 @@ section.top-space{
  /* width:100%;*/
   position:sticky;
 }
+.data-ul li{
+	list-style: disc;
+}
+.about-ul li{
+	list-style: disc;
+}
 
 /****Media Queries****/
 
