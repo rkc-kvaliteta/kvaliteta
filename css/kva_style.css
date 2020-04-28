@@ -463,19 +463,29 @@ div.affix-bottom{
 }
 /************* 4. Content *************/
 			/************* 4.1 Carousel *************/
+ 			/************* 4.1 Carousel *************/
  .overlay {
     background-color: rgba(0,0,0,0.4);
     background-size: cover;
     position: absolute;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
+	height:501px;
 	top:0;
     left:0;
 }
-
+/**/
+.carousel-inner{
+	height:501px;
+}
+.carousel-inner > .item > img{
+	height:501px;
+}
+/**/
 .carousel{
 	margin-top:20px;
-	z-index: 0
+	z-index: 0;
+	width:980px;
 }
 .carousel-caption {
     text-shadow: none;
