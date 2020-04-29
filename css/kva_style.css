@@ -480,6 +480,7 @@ div.affix-bottom{
 }
 .carousel-inner > .item > img{
 	height:287.498px;
+	width:100%;
 }
 /**/
 .carousel{
@@ -494,7 +495,8 @@ div.affix-bottom{
 }
 
 .carousel-caption.middle{
-  padding-bottom:14%;
+  /*padding-bottom:14%;*/
+  padding-bottom:8%;
 }
 		/************* 4.2 -  Landing *************/
 .landing
