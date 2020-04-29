@@ -480,6 +480,7 @@ div.affix-bottom{
 }
 .carousel-inner > .item > img{
 	height:287.498px;
+	width:100%;
 }
 /**/
 .carousel{
