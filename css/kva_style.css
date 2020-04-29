@@ -484,7 +484,7 @@ div.affix-bottom{
 }
 /**/
 .carousel{
-	margin-top:20px;
+	/* margin-top:20px; */
 	z-index: 0;
 	/*width:980px;*/
 	width:100%;
