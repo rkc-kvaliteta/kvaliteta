@@ -495,7 +495,8 @@ div.affix-bottom{
 }
 
 .carousel-caption.middle{
-  padding-bottom:14%;
+  /*padding-bottom:14%;*/
+  padding-bottom:8%;
 }
 		/************* 4.2 -  Landing *************/
 .landing
