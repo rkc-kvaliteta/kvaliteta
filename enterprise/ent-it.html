@@ -9,7 +9,74 @@
 			 <li><a href="#enterprise/ent-it">ENTERPRISE-IT</a></li>
 			</ul>
 		</div>
-	<div class="row">
+		<!--Carousel-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			  <li data-target="#myCarousel" data-slide-to="3"></li>
+			  <li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+
+				<div class="item active">
+					<div class="overlay"></div>
+					<img src="images/ent-it_landing-SRE.png" alt="You Dream IT, We Deliver IT" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+
+				<div class="item">
+					<div class="overlay"></div>
+					<img src="images/ent-it_landing-dcim.jpg" alt="SDaaS" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+
+				<div class="item">
+					<div class="overlay"></div>
+					<img src="images/ent-it_landing-connectedWorkspace.jpg" alt="Enterprise-IT" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+
+				<div class="item">
+					<div class="overlay"></div>
+					<img src="img/placeholder-long.jpg" alt="Service Provider" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+				
+				<div class="item">
+					<div class="overlay"></div>
+					<img src="img/placeholder-long.jpg" alt="Service Provider" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+				
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	
+	<!--<div class="row">
 		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 			<a href="#enterprise/sre"><image class="img-responsive" src="images/ent-it_landing-SRE.png"></a>
 		</div>
@@ -19,7 +86,7 @@
 		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 				<a href="#enterprise/connected_workspace"><image class="img-responsive" src="images/ent-it_landing-connectedWorkspace.jpg"></a>
 		</div>
-	</div>
+	</div>-->
 	<!--END Landing-->
 	
 	<!--content 24.4.2020-->
@@ -72,4 +139,11 @@
   offset: {top: 50}
 });
 
+</script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 3500
+         })
+    });    
 </script>

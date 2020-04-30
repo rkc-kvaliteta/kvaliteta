@@ -484,7 +484,7 @@ div.affix-bottom{
 }
 /**/
 .carousel{
-	margin-top:20px;
+	/*margin-top:20px;*/
 	z-index: 0;
 	/*width:980px;*/
 	width:100%;
@@ -498,6 +498,10 @@ div.affix-bottom{
   /*padding-bottom:14%;*/
   padding-bottom:8%;
 }
+.carousel-caption.intro{
+	padding-bottom:5%;
+}
+
 		/************* 4.2 -  Landing *************/
 .landing
 {

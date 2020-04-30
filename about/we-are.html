@@ -6,7 +6,65 @@
 				<li><a href="#about/we-are">KVALITETA</a></li>
 			</ul>
 		</div>
-            <div class="jumbotron">
+		<!--Carousel-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+
+				<div class="item active">
+					<div class="overlay"></div>
+					<img src="images/technophase3.jpg" alt="You Dream IT, We Deliver IT" class="img-responsive fill">
+						<div class="carousel-caption middle intro">
+							<div class="panel panel-darkish">
+								<div class="panel-body" style="font-size:13px;">
+								
+									<span>Kvaliteta Systems & Solutions is an Information Technology company founded in 2010, with a vision to provide meaningful technology solution to help business automation.</span>
+									<br><br>
+									<span>The Founders have more than 20 Years of experience in I.T, and our Consulting Driven approach makes us an ideal company to partner for any Strategic Technology Initiatives.</span>
+									<br><br>
+									<span>Over the years we have gained a vast experience in delivering IT Solutions, domain expertise, technical excellence and understanding of working with different cultures. And today we are able to help businesses who want to be agile & future ready.</span>
+								</div>
+							</div>
+						</div>
+				</div>
+
+				<div class="item">
+					<div class="overlay"></div>
+					<img src="images/ta_tech_offerings.png" alt="SDaaS" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+
+				<div class="item">
+					<div class="overlay"></div>
+					<img src="images/value_proposition.png" alt="Enterprise-IT" class="img-responsive fill">
+						<div class="carousel-caption middle">
+							
+						</div>
+				</div>
+				
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+            <!--<div class="jumbotron">
 				<div class="row">
 					<div class="col-lg-7 col-xs-12">
 						<div class="panel panel-darkish">
@@ -23,7 +81,7 @@
 						
                 </div>
             </div>
-		</div>
+		</div>-->
 			
 			<!--content 24.4.2020-->
 		<div class="about-content">
@@ -60,4 +118,11 @@
   offset: {top: 50}
 });
 
+</script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 3500
+         })
+    });    
 </script>
