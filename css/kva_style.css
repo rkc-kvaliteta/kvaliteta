@@ -495,7 +495,8 @@ div.affix-bottom{
 }
 .carousel-caption.frame{
 	text-align: left;
-	margin-right: 13%;
+	margin-right: 20%;
+	padding-bottom:5% !important;
 }
 .carousel-caption.middle{
   /*padding-bottom:14%;*/
