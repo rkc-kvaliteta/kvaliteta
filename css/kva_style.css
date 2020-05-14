@@ -492,7 +492,8 @@ div.affix-bottom{
 }
 .carousel-caption {
     text-shadow: none;
-    font-size: 3em;
+    /* font-size: 3em; */
+	font-size: 30px;
 }
 .carousel-caption.frame{
 	text-align: left;
