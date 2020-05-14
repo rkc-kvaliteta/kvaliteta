@@ -64,7 +64,8 @@ blockquote{
 
 .blockquote-reverse,
 blockquote.pull-right {
-	border-right-color: #0e600e;
+	/* border-right-color: #0e600e; */
+	border:none;
 }
 
 /*************  Buttons *************/
