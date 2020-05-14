@@ -507,6 +507,9 @@ div.affix-bottom{
 .carousel-caption.intro{
 	padding-bottom:8%;
 }
+.carousel-caption.tech{
+    padding-bottom: 4%;
+}
 .Dream{
 	margin-right: 180px;
 }
