@@ -1447,6 +1447,10 @@ section.top-space{
 		margin-right: 20%;
 		padding-bottom: 35% !important;
 	}
+	.carousel-caption.tech{
+		padding-bottom: 0%;
+		font-size:12px !important;
+	}
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -1570,7 +1574,7 @@ section.top-space{
 }
 @media screen and (min-width: 600px) and (max-width:768px){
 	#nav2 .navbar-brand {
-		width:45% !important;
+		width:30% !important;
 	} 
 	#nav2 .logo-part2{
 		width:100%;
