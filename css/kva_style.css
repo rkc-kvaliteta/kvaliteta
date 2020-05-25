@@ -1401,7 +1401,9 @@ section.top-space{
 .about-ul li{
 	list-style: disc;
 }
-
+#nav2 .navbar-header {
+	display:none !important;
+}  
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
