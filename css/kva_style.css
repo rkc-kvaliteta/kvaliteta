@@ -1571,12 +1571,7 @@ section.top-space{
 	#nav2 .menu{
 		margin-top:40px;
 	}
-	.navbar-toggle {
-		display: block !important;
-	}
-	.navbar-collapse.collapse{
-		display:none !important;
-	}
+	
 	.carousel-caption.middle{
 	  padding-bottom:17%;
 	  font-size:20px;
