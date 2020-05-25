@@ -1480,6 +1480,17 @@ section.top-space{
 	#nav2 .navbar-brand .logo-part2{
 		padding:0px !important;
 	}  
+	.carousel-caption.middle{
+	  padding-bottom:35%;
+	}
+	.Dream {
+		margin-right: 57px;
+	}
+	.carousel-caption.frame {
+		text-align: left;
+		margin-right: 24%;
+		padding-bottom: 30% !important;
+	}
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -1565,5 +1576,17 @@ section.top-space{
 	}
 	.navbar-collapse.collapse{
 		display:none !important;
+	}
+	.carousel-caption.middle{
+	  padding-bottom:17%;
+	  font-size:20px;
+	}
+	.Dream {
+		margin-right: 100px;
+	}
+	.carousel-caption.frame {
+		text-align: left;
+		margin-right: 24%;
+		padding-bottom: 16% !important;
 	}
 }
