@@ -1481,7 +1481,7 @@ section.top-space{
 		padding:0px !important;
 	}  
 	.carousel-caption.middle{
-	  padding-bottom:35%;
+	  padding-bottom:30%;
 	}
 	.Dream {
 		margin-right: 57px;
@@ -1524,6 +1524,17 @@ section.top-space{
 	}  
 	#nav2 .menu{
 		margin-top:40px;
+	}
+	.carousel-caption.middle{
+	  padding-bottom:27%;
+	}
+	.Dream {
+		margin-right: 54px;
+	}
+	.carousel-caption.frame {
+		text-align: left;
+		margin-right: 24%;
+		padding-bottom: 27% !important;
 	}
 }
 @media screen and (min-width: 540px) and (max-width:600px){
@@ -1583,5 +1594,20 @@ section.top-space{
 		text-align: left;
 		margin-right: 24%;
 		padding-bottom: 16% !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:800px){
+	.carousel-caption.middle{
+		padding-bottom:16%;
+		font-size: 22px;
+	}
+	.Dream {
+		margin-right: 113px;
+	}
+	.carousel-caption.frame {
+		text-align: left;
+		margin-right: 20%;
+		padding-bottom: 15% !important;
+		font-size: 22px;
 	}
 }
