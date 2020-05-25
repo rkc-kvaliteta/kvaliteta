@@ -1484,7 +1484,7 @@ section.top-space{
 	  padding-bottom:34%;
 	}
 	.Dream {
-		margin-right: 54px;
+		margin-right: 36px;
 	}
 	.carousel-caption.frame {
 		text-align: left;
@@ -1555,6 +1555,17 @@ section.top-space{
 	}  
 	#nav2 .menu{
 		margin-top:40px;
+	}
+	.carousel-caption.middle{
+	  padding-bottom:25%;
+	}
+	.Dream {
+		margin-right: 72px;
+	}
+	.carousel-caption.frame {
+		text-align: left;
+		margin-right: 22%;
+		padding-bottom: 24% !important;
 	}
 }
 @media screen and (min-width: 600px) and (max-width:768px){
