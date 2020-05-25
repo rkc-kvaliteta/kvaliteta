@@ -1569,27 +1569,21 @@ section.top-space{
 	}
 }
 @media screen and (min-width: 600px) and (max-width:768px){
-	#nav2 .navbar-header {
-		display:none !important;
-	}  
-	 #logo-part1{
-		display:none !important;
+	#nav2 .navbar-brand {
+		width:45% !important;
 	} 
-	 #nav2 .navbar-brand {
-		width:30% !important;
-	} 
-	.logo-bar .logo-1{
+	#nav2 .logo-part2{
 		width:100%;
 	}
 	.logo-bar .logo-1 {
-		display:block !important;
+		display:none !important;
 	}
 	#nav2 .navbar-header {
-		display:none !important;
+		display:block !important;
 	}  
 	#nav2 .navbar-brand .logo-part2{
 		padding:0px !important;
-	}   
+	}  
 	#nav2 .menu{
 		margin-top:40px;
 	}
