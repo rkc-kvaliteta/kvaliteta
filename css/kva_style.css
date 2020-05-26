@@ -1580,10 +1580,10 @@ section.top-space{
 		width:100%;
 	}
 	.logo-bar .logo-1 {
-		display:none !important;
+		display:block !important;
 	}
 	#nav2 .navbar-header {
-		display:block !important;
+		display:none !important;
 	}  
 	#nav2 .navbar-brand .logo-part2{
 		padding:0px !important;
