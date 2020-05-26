@@ -1572,7 +1572,7 @@ section.top-space{
 		padding-bottom: 24% !important;
 	}
 }
-@media screen and (min-width: 600px) and (max-width:767px){
+@media screen and (min-width: 600px) and (max-width:768px){
 	#nav2 .navbar-brand {
 		width:30% !important;
 	} 
@@ -1605,7 +1605,7 @@ section.top-space{
 		padding-bottom: 16% !important;
 	}
 }
-@media screen and (min-width: 767px) and (max-width:800px){
+@media screen and (min-width: 768px) and (max-width:800px){
 	.logo-bar .logo-1 {
 		display:block !important;
 		width:80%;
