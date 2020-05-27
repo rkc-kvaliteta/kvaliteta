@@ -1404,6 +1404,9 @@ section.top-space{
 #nav2 .navbar-header {
 	display:none !important;
 }  
+.SDaas-content{
+	margin-top:10px;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
