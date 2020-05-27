@@ -1620,7 +1620,7 @@ section.top-space{
 		padding-bottom: 24% !important;
 	} */
 }
-@media screen and (min-width: 600px) and (max-width:768px){
+@media screen and (min-width: 600px) and (max-width:767px){
 	#nav2 .navbar-brand {
 		width:27% !important;
 	} 
