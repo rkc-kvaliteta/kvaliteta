@@ -496,7 +496,7 @@ div.affix-bottom{
 .carousel-caption {
     text-shadow: none;
     font-size: 2em; 
-	/* font-size: 30px; */
+	font-weight:bold;
 }
 .carousel-caption.frame{
 	text-align: left;
@@ -514,9 +514,9 @@ div.affix-bottom{
     padding-bottom: 4%;
 	font-size:14px !important;
 }
-.Dream{
+/* .Dream{
 	margin-right: 180px;
-}
+} */
 
 		/************* 4.2 -  Landing *************/
 .landing
