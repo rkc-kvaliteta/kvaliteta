@@ -512,6 +512,7 @@ div.affix-bottom{
 }
 .carousel-caption.tech{
     padding-bottom: 4%;
+	font-size:14px !important;
 }
 .Dream{
 	margin-right: 180px;
