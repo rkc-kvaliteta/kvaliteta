@@ -1334,19 +1334,10 @@ width:100% !important;
 }
 /******14.4.2020******/
 .Top-Nav {
-	/*box-shadow: inset 0px -8px 10px -8px #D8B446;*/
-	border-bottom: 2px solid #0e600e;
-	position:relative;
+	 box-shadow: inset 0px -8px 5px -8px #0e600e;
+	border-bottom: 2px solid #333;
 }
-.Top-Nav:after {
-	content:'';
-    position:absolute;
-    top:-3px;
-    bottom:-4px;
-    left:0;
-    right:0;
-	border-bottom: 1px solid #333;
-}
+
 #navbar-collapse-search ul li a{
 	color:#0e600e !important;
 	padding-top:10px !important;
