@@ -892,6 +892,22 @@ border-color: #0e600e;
   border-radius: 20px;
   border: none;
 }
+#Spit-green{
+	border-radius: 20px;
+	background-color:#8fdeca;
+}
+#Spit-yellow{
+	border-radius: 20px;
+	background-color:#fae38e;
+}
+#Spit-pink{
+	border-radius: 20px;
+	background-color:#eea89c;
+}
+#Spit-blue{
+	border-radius: 20px;
+	background-color:#83bddb;
+}
 .close-btn{
 	font-size:30px;
 }
