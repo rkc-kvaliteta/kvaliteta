@@ -251,7 +251,7 @@ a.thumbnail:active{
 }
 #nav2 .nav li.active > a, #nav2 .nav li.open > a {
     color: #0e600e;
-	font-weight:501px;
+	font-weight:501;
     background: transparent !important;
 }
 
