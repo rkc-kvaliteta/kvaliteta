@@ -1475,6 +1475,18 @@ section.top-space{
 	#myCarousel {
 		display:none !important;
 	}
+	.modal-title{
+		font-size:14px;
+	}
+	.ioe-ul{
+		padding:0px !important;
+	}
+	.modal-open .modal{
+		width:180px !important;
+	}
+	.modal{
+		margin:auto !important;
+	}
 	/* .carousel-caption.middle{
 	  padding-bottom:42%;
 	}
@@ -1526,6 +1538,18 @@ section.top-space{
 	#myCarousel {
 		display:none !important;
 	}
+	.modal-title{
+		font-size:16px;
+	}
+	.ioe-ul{
+		padding:0px !important;
+	}
+	.modal-open .modal{
+		width:200px !important;
+	}
+	.modal{
+		margin:auto !important;
+	}
 	/* .carousel-caption.middle{
 	  padding-bottom:34%;
 	}
@@ -1574,6 +1598,12 @@ section.top-space{
 	#myCarousel {
 		display:none !important;
 	}
+	.modal-title{
+		font-size:16px;
+	}
+	.ioe-ul{
+		padding:0px !important;
+	}
 	/* .carousel-caption.middle{
 	  padding-bottom:27%;
 	}
@@ -1607,6 +1637,9 @@ section.top-space{
 	}
 	#myCarousel {
 		display:none !important;
+	}
+	.modal-title{
+		font-size:20px;
 	}
 	/* .carousel-caption.middle{
 	  padding-bottom:25%;
