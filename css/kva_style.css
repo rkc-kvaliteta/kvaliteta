@@ -1489,6 +1489,12 @@ section.top-space{
 		left:0 !important;
 		right:0 !important;
 	}
+	.panel-kvaliteta > a .panel-title {
+		font-size:10px !important;
+	}
+	.panel-heading{
+		padding:10px 5px;
+	}
 	/* .carousel-caption.middle{
 	  padding-bottom:42%;
 	}
@@ -1554,6 +1560,12 @@ section.top-space{
 		left:0 !important;
 		right:0 !important;
 	}
+	.panel-kvaliteta > a .panel-title {
+		font-size:10px !important;
+	}
+	.panel-heading{
+		padding:10px 5px;
+	}
 	/* .carousel-caption.middle{
 	  padding-bottom:34%;
 	}
@@ -1607,6 +1619,12 @@ section.top-space{
 	}
 	.ioe-ul{
 		padding:0px !important;
+	}
+	.panel-kvaliteta > a .panel-title {
+		font-size:10px !important;
+	}
+	.panel-heading{
+		padding:10px 5px;
 	}
 	/* .carousel-caption.middle{
 	  padding-bottom:27%;
