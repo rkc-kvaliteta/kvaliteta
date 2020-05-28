@@ -892,6 +892,24 @@ border-color: #0e600e;
   border-radius: 20px;
   border: none;
 }
+.close-btn{
+	font-size:30px;
+}
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 20px 20px 0px 0px;
+}
+.modal-header .close{
+	padding: 1rem 1rem;
+	margin: -1rem -1rem -1rem auto;
+}
+.modal-body{
+	border-radius: 0px 0px 20px 20px;
+}
 #Spit-green{
 	border-radius: 20px;
 	background-color:#8fdeca;
@@ -908,13 +926,7 @@ border-color: #0e600e;
 	border-radius: 20px;
 	background-color:#83bddb;
 }
-.close-btn{
-	font-size:30px;
-}
-.modal-header {
-  border-bottom-color: #EEEEEE;
-  background-color: #FAFAFA;
-}
+
 /**************4.8  Gallery**************************/
 .grid {
   max-width: 100%;
