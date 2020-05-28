@@ -1667,6 +1667,10 @@ section.top-space{
 		padding-bottom: 15% !important;
 		font-size: 22px;
 	}
+	.carousel-caption.tech {
+		padding-bottom: 0% !important;
+		font-size: 12px !important;
+	}
 }
 @media screen and (min-width: 800px) and (max-width:991px){
 	.logo-bar .logo-1 {
