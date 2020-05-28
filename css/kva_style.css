@@ -906,6 +906,7 @@ border-color: #0e600e;
 .modal-header .close{
 	padding: 1rem 1rem;
 	margin: -1rem -1rem -1rem auto;
+	font-size:30px;
 }
 .modal-body{
 	border-radius: 0px 0px 20px 20px;
