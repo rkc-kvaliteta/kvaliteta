@@ -394,30 +394,14 @@
 			</div>
 		</div>-->
 </section>
-<script>
-	$('.externalModal').on('click', function (e) {
-		e.preventDefault();
-		$('#theModal').modal('show').find('.modal-content').load($(this).attr('href'));
-	});
-</script>
-<script>
-	$('map').imageMapResize();
-</script>
-<script>
-	//used for highlighting parts of map
-	$('.map-image').maphilight({ stroke: false, fillColor: '000000' });
-	$('area').click(function (e) {
-		e.preventDefault();
-		// remember clicked area
-		var clickedArea = $(this);
-		// foreach area keep hover selected or or remove from other
-		$('area').each(function () {
-			Data = $(this).data('maphilight') || {};
-			Data.alwaysOn = $(this).is(clickedArea); // modify
-			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
-		});
 
-	});
+<script>
+	
+		$('.externalModal').on('click', function(e){
+			  e.preventDefault();
+			  $('#theModal').modal('show').find('.modal-content').load($(this).attr('xlink:href'));
+			});
+		
 </script>
 <script>
 	//21.4.2020
