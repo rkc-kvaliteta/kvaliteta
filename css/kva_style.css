@@ -133,6 +133,35 @@ blockquote.pull-right {
     background-color: #0e600e !important;
     color: #fff !important;
 }
+/*************  POPOVER *************/
+.popover{
+border-radius:0;
+} 
+
+/*************  CANVAS *************/
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/*************  SVG *************/
+svg{
+ background-size:100% 100%;
+ background-repeat: no-repeat;
+  max-width: 100%;
+  width:100%;
+}
+
+svg a:focus,
+svg a:hover {
+  outline: none;
+}
+svg a:focus path,
+svg a:hover path {
+  fill: rgba(0,0,0, 0.15);
+  cursor: pointer;
+}
+
 /*************  CANVAS *************/
 canvas {
   max-width: 100%;
