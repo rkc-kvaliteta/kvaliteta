@@ -1454,7 +1454,7 @@ section.top-space{
 	background-color:#333;
 }
 .affix {
-  top: 47px;
+  top: 42px;
  /* width:100%;*/
   position:sticky;
 }
