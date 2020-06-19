@@ -1474,6 +1474,9 @@ section.top-space{
 .mt-20{
 	margin-top:20px;
 }
+.model p{
+	text-align:justify;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
