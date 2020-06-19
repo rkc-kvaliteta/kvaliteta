@@ -1470,6 +1470,10 @@ section.top-space{
 .content-top{
 	margin-top:10px;
 }
+
+.mt-20{
+	margin-top:20px;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
@@ -1542,9 +1546,7 @@ section.top-space{
 	} */
 	
 	/**19.6.2020**/
-	.mt-20{
-		margin-top:20px;
-	}
+	
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
