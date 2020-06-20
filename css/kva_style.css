@@ -273,16 +273,12 @@ a.thumbnail:active{
   padding-top:10px;
   text-align: center;
 }
-/* .navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
     color: #0e600e !important;
 	border:1px solid #ddd;
 	font-weight:501;
-} */
-.navbar ul.nav li:hover , .navbar ul.nav li:focus {
-    color: #0e600e !important;
-	border:1px solid #ddd;
-	font-weight:501;
-}
+} 
+
 #nav2 .nav li.active > a, #nav2 .nav li.open > a {
     color: #0e600e;
 	font-weight:501;
