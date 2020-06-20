@@ -278,7 +278,9 @@ a.thumbnail:active{
 	border:1px solid #ddd;
 	font-weight:501;
 } 
-
+.nav-i a{
+	border:none !important;
+}
 #nav2 .nav li.active > a, #nav2 .nav li.open > a {
     color: #0e600e;
 	font-weight:501;
