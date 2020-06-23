@@ -1526,6 +1526,21 @@ section.top-space{
 .cloud-content{
 	margin-top:10px;
 }
+#kite{
+	margin-top:20%;
+}
+#enterprise{
+	margin-top:12%;
+}
+#kite{
+	margin-top:2%;
+}
+#cid{
+	margin-top:8%;
+}
+#telecom{
+	margin-top:4%;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
