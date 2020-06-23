@@ -547,7 +547,7 @@ div.affix-bottom{
     padding-bottom: 4%;
 	font-size:14px !important;
 }
-.carousel-caption .enter-content{
+.carousel-caption.ent{
 	padding-left:10%;
 	padding-bottom:6%;
 }
