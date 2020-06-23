@@ -1498,6 +1498,21 @@ section.top-space{
 	margin-right: auto;
 	width:80%;
 }
+/**23.6.2020**/
+#Kite-content{
+	background-image:url('../img/test_kite.png');
+}
+.bg-black{
+	background-color:#333;
+	opacity:0.8;
+	border-radius:6px;
+	padding:10px;
+	color:#fff;
+} 
+.bg-black h3, .bg-black h4, .bg-black i{
+	color:#fff;
+	margin-top:0;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
