@@ -1515,6 +1515,8 @@ section.top-space{
 	border-radius:6px;
 	padding:10px;
 	color:#fff;
+	position:absolute;
+	margin:10px;
 } 
 .bg-black h3, .bg-black h4, .bg-black i{
 	color:#fff;
