@@ -556,6 +556,7 @@ div.affix-bottom{
 	padding-bottom:2%;
 	font-size: 13px;
 	text-align: justify;
+	right:2% !important;
 }
 /* .Dream{
 	margin-right: 180px;
