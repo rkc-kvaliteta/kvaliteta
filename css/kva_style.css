@@ -551,6 +551,12 @@ div.affix-bottom{
 	padding-left:10%;
 	padding-bottom:6%;
 }
+.carousel-caption.Kss{
+	padding-left:10%;
+	padding-bottom:2%;
+	font-size: 13px;
+	text-align: justify;
+}
 /* .Dream{
 	margin-right: 180px;
 } */
@@ -1516,6 +1522,8 @@ section.top-space{
 .tab-content{
 	padding:10px;
 }
+.cloud-content{
+	margin-top:10px;
 }
 /****Media Queries****/
 
