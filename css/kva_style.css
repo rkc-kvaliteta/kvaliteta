@@ -1591,8 +1591,11 @@ section.top-space{
 	color:#fff;
 	margin-top:0;
 } */
-.tab-content{
+/* .tab-content{
 	padding:10px;
+} */
+#ent-cloud{
+	margin:20px 0px;
 }
 .cloud-content{
 	margin-top:10px;
@@ -1616,7 +1619,9 @@ section.top-space{
 	font-weight:bold;
 }
 #Iaas, #Paas, #Cloud, #Oss{
+	padding:10px;
 	border:1px solid #0e600e;
+	box-shadow: 4px 0px 4px 0px #0e600e;
 }
 /****Media Queries****/
 
