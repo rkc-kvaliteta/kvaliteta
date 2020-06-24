@@ -568,18 +568,35 @@ div.affix-bottom{
 	padding-bottom:8%;
 	right:5% !important;
 	text-align:justify;
+	font-size:18px;
 }
 .carousel-caption.Dcim-car{
 	padding-left:22%;
 	padding-bottom:6%;
 	right:5% !important;
 	text-align:justify;
+	font-size:18px;
+}
+.carousel-caption.Dcim-car{
+	padding-left:22%;
+	padding-bottom:4%;
+	right:5% !important;
+	text-align:justify;
+	font-size:18px;
 }
 .carousel-caption.Coll-car{
 	padding-left:28%;
 	padding-bottom:12%;
 	right:5% !important;
 	text-align:justify;
+	font-size:18px;
+}
+.carousel-caption.Data-car{
+	padding-left:30%;
+	padding-bottom:6%;
+	right:5% !important;
+	text-align:justify;
+	font-size:18px;
 }
 .carousel-caption.Kss{
 	padding-left:20%;
