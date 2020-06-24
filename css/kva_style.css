@@ -1892,9 +1892,59 @@ section.top-space{
 		padding-bottom: 0% !important;
 		font-size: 12px !important;
 	}
+	.carousel-caption.Ent-car{
+		padding-left:28%;
+		padding-bottom:5%;
+		font-size:11px;
+	}
+	.carousel-caption.Dcim-car{
+		padding-left:28%;
+		padding-bottom:0%;
+		font-size:11px;
+	}
+	.carousel-caption.Con-car{
+		padding-left:28%;
+		padding-bottom:0%;
+		font-size:11px;
+	}
+	.carousel-caption.Coll-car{
+		padding-left:28%;
+		padding-bottom:7%;
+		font-size:11px;
+	}
+	.carousel-caption.Data-car{
+		padding-left:28%;
+		padding-bottom:5%;
+		font-size:111px;
+	}
 }
 @media screen and (min-width: 800px) and (max-width:991px){
 	.logo-bar .logo-1 {
 		width:65%;
+	}
+	.carousel-caption.Ent-car{
+		padding-left:28%;
+		padding-bottom:5%;
+		font-size:11px;
+	}
+	.carousel-caption.Dcim-car{
+		padding-left:28%;
+		padding-bottom:0%;
+		font-size:11px;
+	}
+	.carousel-caption.Con-car{
+		padding-left:28%;
+		padding-bottom:0%;
+		font-size:11px;
+	}
+	.carousel-caption.Coll-car{
+		padding-left:28%;
+		padding-bottom:7%;
+		font-size:11px;
+	}
+	.carousel-caption.Data-car{
+		padding-left:28%;
+		padding-bottom:5%;
+		font-size:111px;
 	}
 }
