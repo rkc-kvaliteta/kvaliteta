@@ -1556,7 +1556,7 @@ section.top-space{
 /* #Kite-content{
 	background-image:url('../img/test_kite.png');
 } */
-#content-position{
+/* #content-position{
 	position:absolute;
 	top: 23%;
 	bottom: 0;
@@ -1572,7 +1572,7 @@ section.top-space{
 .bg-black h3, .bg-black h4, .bg-black i{
 	color:#fff;
 	margin-top:0;
-}
+} */
 .tab-content{
 	padding:10px;
 }
