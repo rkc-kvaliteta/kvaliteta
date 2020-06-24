@@ -577,7 +577,7 @@ div.affix-bottom{
 	text-align:justify;
 	font-size:18px;
 }
-.carousel-caption.Dcim-car{
+.carousel-caption.Con-car{
 	padding-left:22%;
 	padding-bottom:4%;
 	right:5% !important;
@@ -593,7 +593,7 @@ div.affix-bottom{
 }
 .carousel-caption.Data-car{
 	padding-left:30%;
-	padding-bottom:6%;
+	padding-bottom:8%;
 	right:5% !important;
 	text-align:justify;
 	font-size:18px;
