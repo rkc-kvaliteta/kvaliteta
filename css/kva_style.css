@@ -515,6 +515,10 @@ div.affix-bottom{
 .carousel-inner{
 	height:287.498px;
 }
+.carousel-inner > .item > img{
+	height:287.498px;
+	width:100%;
+}
 .overlay.Ent-over{
     background-color: rgba(0,0,0,0.4);
     background-size: cover;
@@ -531,9 +535,21 @@ div.affix-bottom{
 	height:auto;
 	width:100%;
 }
-.carousel-inner > .item > img{
-	height:287.498px;
+.carousel-inner.about{
+	height:auto;
+}
+.carousel-inner.about > .item > img{
+	height:auto;
 	width:100%;
+}
+.about-over{
+	background-color: rgba(0,0,0,0.4);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	top:0;
+    left:0;
 }
 /**/
 .carousel{
@@ -562,6 +578,13 @@ div.affix-bottom{
 .carousel-caption.tech{
     padding-bottom: 2%;
 	font-size:14px !important;
+}
+.carousel-caption.Kss{
+	padding-left:20%;
+	padding-bottom:2%;
+	font-size: 13px;
+	text-align: justify;
+	right:2% !important;
 }
 .carousel-caption.Ent-car{
 	padding-left:28%;
@@ -598,13 +621,7 @@ div.affix-bottom{
 	text-align:justify;
 	font-size:18px;
 }
-.carousel-caption.Kss{
-	padding-left:20%;
-	padding-bottom:2%;
-	font-size: 13px;
-	text-align: justify;
-	right:2% !important;
-}
+
 /* .Dream{
 	margin-right: 180px;
 } */
