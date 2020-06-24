@@ -564,22 +564,22 @@ div.affix-bottom{
 	font-size:14px !important;
 }
 .carousel-caption.Ent-car{
-	padding-left:15%;
+	padding-left:28%;
 	padding-bottom:8%;
 	right:5% !important;
 	text-align:justify;
 	font-size:18px;
 }
 .carousel-caption.Dcim-car{
-	padding-left:22%;
+	padding-left:28%;
 	padding-bottom:6%;
 	right:5% !important;
 	text-align:justify;
 	font-size:18px;
 }
 .carousel-caption.Con-car{
-	padding-left:22%;
-	padding-bottom:4%;
+	padding-left:28%;
+	padding-bottom:5%;
 	right:5% !important;
 	text-align:justify;
 	font-size:18px;
@@ -592,7 +592,7 @@ div.affix-bottom{
 	font-size:18px;
 }
 .carousel-caption.Data-car{
-	padding-left:30%;
+	padding-left:28%;
 	padding-bottom:8%;
 	right:5% !important;
 	text-align:justify;
