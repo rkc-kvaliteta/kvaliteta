@@ -524,10 +524,10 @@ div.affix-bottom{
 	top:0;
     left:0;
 }
-.carousel-inner.Ent{
+.carousel-inner.Ent-car{
 	height:auto;
 }
-.carousel-inner.Ent > .item > img{
+.carousel-inner.Ent-car > .item > img{
 	height:auto;
 	width:100%;
 }
@@ -566,6 +566,11 @@ div.affix-bottom{
 .carousel-caption.ent{
 	padding-left:10%;
 	padding-bottom:6%;
+}
+.carousel-caption.Ent-car{
+	padding-left:10%;
+	padding-bottom:10%;
+	right:5% !important;
 }
 .carousel-caption.Kss{
 	padding-left:20%;
