@@ -563,13 +563,21 @@ div.affix-bottom{
     padding-bottom: 2%;
 	font-size:14px !important;
 }
-.carousel-caption.ent{
-	padding-left:10%;
-	padding-bottom:6%;
-}
 .carousel-caption.Ent-car{
 	padding-left:15%;
 	padding-bottom:8%;
+	right:5% !important;
+	text-align:justify;
+}
+.carousel-caption.Dcim-car{
+	padding-left:22%;
+	padding-bottom:6%;
+	right:5% !important;
+	text-align:justify;
+}
+.carousel-caption.Coll-car{
+	padding-left:28%;
+	padding-bottom:12%;
 	right:5% !important;
 	text-align:justify;
 }
