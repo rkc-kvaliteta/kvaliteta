@@ -1555,7 +1555,7 @@ section.top-space{
 .mt-20{
 	margin-top:20px;
 }
-.model p{
+.model p, .partner-model p{
 	text-align:justify;
 }
 .p-0{
@@ -1623,6 +1623,8 @@ section.top-space{
 	border:1px solid #0e600e;
 	box-shadow: 4px 0px 4px 0px #0e600e;
 }
+
+	
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
