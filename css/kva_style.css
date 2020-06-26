@@ -574,6 +574,10 @@ div.affix-bottom{
     font-size: 1.5em; 
 	font-weight:bold;
 }
+.carousel-caption.sdaas-text{
+	padding-bottom:15%;
+	padding-right:15%;
+}
 .carousel-caption.frame{
 	text-align: left;
 	margin-right: 20%;
