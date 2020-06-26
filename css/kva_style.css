@@ -1561,6 +1561,7 @@ section.top-space{
 }
 .logo-bar .logo-1{
 	width:100%;
+	max-width:100%;
 }
 #nav2 span{
 	background-color:#333;
