@@ -1654,7 +1654,11 @@ section.top-space{
 	border:1px solid #0e600e;
 	box-shadow: 4px 0px 4px 0px #0e600e;
 }
-
+.br-color{
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+}
 	
 /****Media Queries****/
 
