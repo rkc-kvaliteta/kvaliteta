@@ -153,7 +153,7 @@
 
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 			<div class="plainbox">
-				<form method="post" action="MAILTO:info@kvaliteta.in" enctype="text/plain">
+				<!-- <form method="post" action="MAILTO:info@kvaliteta.in" enctype="text/plain">
 					<div class="form-group">
 						<input type="text" class="form-control" id="username" Name="Name" placeholder="Full Name"
 							required>
@@ -171,7 +171,35 @@
 							required></textarea>
 					</div>
 					<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
-				</form>
+				</form> -->
+				
+				<form id="reused_form" name="Contactform" method="post" action="" enctype="text/plain" onsubmit="return submitfn()">
+					<div class="form-group">
+						<label for="username">  Name <span class="required_lab">*</span></label> 
+						<input type="text" class="form-control" id="username" Name="Name" placeholder="Full Name" required> 
+					</div>
+					<div class="form-group">
+						<label for="usermail">Email <span class="required_lab">*</span></label>
+						<input type="email" class="form-control" id="usermail" Name="MailId" placeholder="E-mail" required>
+					</div>
+					<div class="form-group">
+						<label for="contactno">Contact No<span class="required_lab">*</span></label>
+						<input type="text" class="form-control" id="contactno" Name="ContactNo"	placeholder="Contact No." required>
+					</div>
+					<div class="form-group">
+						<label for="comment">Query</label>
+						<textarea class="form-control" rows="6" id="comment" Name="Query" placeholder="Query" required></textarea>
+					</div>		
+					<input type="submit" class="btn btn-default btn-lg btn-block" onclick="sendEmail()" />
+					</form>
+					
+					<div id="error_message" style="width:100%; height:100%; display:none; ">
+					<h4>Error</h4>
+					Sorry there was an error sending your form.
+					</div>
+					<div id="success_message" style="width:100%; height:100%; display:none; ">
+					<h2>Success! Your Message was Sent Successfully.</h2>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -185,3 +213,99 @@
   offset: {top: 50}
 });
 </script>
+
+<script>
+function submitfn()                                    
+{ 
+    var name = document.forms["Contactform"]["Name"];               
+    var email = document.forms["Contactform"]["MailId"];    
+    var phone = document.forms["Contactform"]["ContactNo"];  
+    var query = document.forms["Contactform"]["Query"];  
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+	if (email.value == "")                                  
+    { 
+        window.alert("Please enter your email."); 
+        email.focus(); 
+        return false; 
+    } 
+	if (phone.value == "")                                  
+    { 
+        window.alert("Please enter your Contact.No."); 
+        phone.focus(); 
+        return false; 
+    } 
+	if (query.value == "")                                  
+    { 
+        window.alert("Please enter your Command."); 
+        query.focus(); 
+        return false; 
+    } 
+	return true; 
+}
+</script> 
+
+<script>
+
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+         window.open('mailto:saranyajeyam23@gmail.com?subject=subject&body=body');
+      });
+});
+</script>
+
