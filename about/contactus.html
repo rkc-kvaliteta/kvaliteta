@@ -304,7 +304,19 @@ $(function()
         });
 
 
-         window.open('mailto:saranyajeyam23@gmail.com?subject=subject&body=body');
+         function sendEmail() {
+			Email.send({
+			Host: "smtp.gmail.com",
+			Username : "testajay2020@gmail.com",
+			Password : "ajayarul4",
+			To : "aruldickans@gmail.com",
+			From : "testajay2020@gmail.com",
+			Subject : "E",
+			Body : "email body",
+			}).then(
+				message => alert("mail sent successfully")
+			);
+		}
       });
 });
 </script>
