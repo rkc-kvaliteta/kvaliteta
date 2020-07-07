@@ -169,7 +169,7 @@
 								<option value="System Integrator">System Integrator</option>
 								</select>
 						</div>
-						<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+						<input type="button" value="Submit" onclick="Popupmail()" class="btn btn-default btn-lg btn-block" />
 					</form>
 				</div>
 
@@ -213,4 +213,31 @@
   offset: {top: 50}
 });
 
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script> 
+<script>
+function Popupmail() {
+var firstName= document.getElementById("firstName").value
+var lastName= document.getElementById("lastName").value
+var Company= document.getElementById("Company").value
+var usermailid= document.getElementById("usermailid").value
+var businessNo= document.getElementById("businessNo").value
+var JobTitle= document.getElementById("JobTitle").value
+var JobDept= document.getElementById("JobDept").value
+
+    Email.send({
+    Host: "smtp.gmail.com",
+    Username : "testajay2020@gmail.com",
+    Password : "ajayarul4",
+    To : "saranyajeyam96@gmail.com",
+    From : "testajay2020@gmail.com",
+    Subject : "Enquiry",
+    Body : (firstName)+ " <br/> " + (lastName)+ " <br/> " + (Company) + " <br/> " + (usermailid) + " <br/> " + (businessNo)
+	+ " <br/> " + (JobTitle) + " <br/> " + (JobDept),
+	
+    }).then(
+       message => alert("mail sent successfully")
+    );
+}
 </script>
