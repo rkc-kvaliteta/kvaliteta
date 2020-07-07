@@ -190,7 +190,7 @@
 						<label for="comment">Query</label>
 						<textarea class="form-control" rows="6" id="comment" Name="Query" placeholder="Query" required></textarea>
 					</div>		
-					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block" onclick="sendEmail()" />
+					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block" id="form-submit" onclick="sendEmail()" />
 					</form>
 					
 			</div>
@@ -222,7 +222,7 @@ var contactno= document.getElementById("contactno").value
     Password : "ajayarul4",
     To : "saranyajeyam23@gmail.com",
     From : "testajay2020@gmail.com",
-    Subject : "Enquiry",
+    Subject : "Details",
     Body : (username)+ " <br/> " + (usermail)+ " <br/> " + (contactno) + " <br/> " + (comment),
 	
     }).then(
