@@ -188,7 +188,12 @@
 					</div>
 					<div class="form-group">
 						<label for="comment">Query</label>
-						<textarea class="form-control" rows="6" id="comment" Name="Query" placeholder="Query" required></textarea>
+						<select class="form-control" id="comment" Name="comment" required>
+							<option value="">--Select--</option>
+							<option value="">Sales Related Query</option>
+							<option value="">General Information</option>
+						</select>
+						<!-- <textarea class="form-control" rows="6" id="comment" Name="Query" placeholder="Query" required></textarea> -->
 					</div>		
 					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block" id="form-submit" onclick="sendEmail()" />
 					</form>
