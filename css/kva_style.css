@@ -1660,7 +1660,10 @@ section.top-space{
 	border: none;
 	-moz-outline-style: none;
 }
-	
+	/**8.7.2020**/
+#success-msg{
+	display:none;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
