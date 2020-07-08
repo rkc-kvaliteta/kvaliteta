@@ -1663,6 +1663,8 @@ section.top-space{
 	/**8.7.2020**/
 #success-msg{
 	display:none;
+	color:#0e600e;
+	text-align:center;
 }
 /****Media Queries****/
 
