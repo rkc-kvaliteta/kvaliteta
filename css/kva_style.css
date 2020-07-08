@@ -1735,8 +1735,10 @@ section.top-space{
 		font-size:10px !important;
 	} */
 	
-	/**19.6.2020**/
-	
+	/**8.7.2020**/
+	.modal.right .modal-dialog {
+		width: 250px;
+	}	
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -1804,6 +1806,10 @@ section.top-space{
 		margin-right: 24%;
 		padding-bottom: 30% !important;
 	} */
+	/**8.7.2020**/
+	.modal.right .modal-dialog {
+		width: 250px;
+	}	
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -1864,6 +1870,10 @@ section.top-space{
 		margin-right: 24%;
 		padding-bottom: 27% !important;
 	} */
+	/**8.7.2020**/
+	.modal.right .modal-dialog {
+		width: 320px;
+	}	
 }
 @media screen and (min-width: 540px) and (max-width:600px){
 	#nav2 .navbar-brand {
@@ -1901,6 +1911,10 @@ section.top-space{
 		margin-right: 22%;
 		padding-bottom: 24% !important;
 	} */
+	/**8.7.2020**/
+	.modal.right .modal-dialog {
+		width: 320px;
+	}	
 }
 @media screen and (min-width: 600px) and (max-width:767px){
 	#nav2 .navbar-brand {
@@ -1936,6 +1950,10 @@ section.top-space{
 		margin-right: 24%;
 		padding-bottom: 16% !important;
 	} */
+	/**8.7.2020**/
+	.modal.right .modal-dialog {
+		width: 500px;
+	}	
 }
 @media screen and (min-width: 768px) and (max-width:800px){
 	.logo-bar .logo-1 {
@@ -1987,6 +2005,10 @@ section.top-space{
 		padding-bottom:5%;
 		font-size:111px;
 	}
+	/**8.7.2020**/
+	.modal.right .modal-dialog {
+		width: 500px;
+	}	
 }
 @media screen and (min-width: 800px) and (max-width:991px){
 	.logo-bar .logo-1 {
