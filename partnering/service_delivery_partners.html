@@ -171,6 +171,10 @@
 						</div>
 						<input type="button" value="Submit" onclick="Popupmail()" class="btn btn-default btn-lg btn-block toggle-disabled" disabled />
 					</form>
+					<div id="success-msg">
+						Thanks for contacting us!<br/>
+						We will get back to you soon!
+					</div>
 				</div>
 
 			</div><!-- modal-content -->
@@ -232,12 +236,19 @@ var JobDept= document.getElementById("JobDept").value
     Password : "Qwerty@23",
     To : "saranyajeyam23@gmail.com",
     From : "jsaranya701@gmail.com",
-    Subject : "Enquiry",
+    Subject : "Become a partner",
     Body : (firstName)+ " <br/> " + (lastName)+ " <br/> " + (Company) + " <br/> " + (usermailid) + " <br/> " + (businessNo)
 	+ " <br/> " + (JobTitle) + " <br/> " + (JobDept),
 	
     }).then(
-       message => alert("mail sent successfully")
+       <!-- message => alert("mail sent successfully") -->
+			function(data){
+				$('#success-msg').fadeIn().appand(data);
+				setTimeout(function() {
+					$('#success-msg').fadeOut("slow");
+				}, 2000 );
+
+			}
     );
 }
 </script>

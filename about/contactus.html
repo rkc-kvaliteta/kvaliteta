@@ -176,15 +176,15 @@
 				<form id="contact-form" name="Contactform" method="post" action="" enctype="text/plain" onsubmit="return submitfn()">
 					<div class="form-group">
 						<label for="username">  Name <span class="required_lab">*</span></label> 
-						<input type="text" class="form-control required" id="username" Name="name" placeholder="Full Name" required> 
+						<input type="text" class="form-control required" size="30" id="username" Name="name" placeholder="Full Name" required> 
 					</div>
 					<div class="form-group">
 						<label for="usermail">Email <span class="required_lab">*</span></label>
-						<input type="text" class="form-control required" id="usermail" Name="MailId" placeholder="E-mail" required>
+						<input type="text" class="form-control required" size="30" id="usermail" Name="MailId" placeholder="E-mail" required>
 					</div>
 					<div class="form-group">
 						<label for="contactno">Contact No<span class="required_lab">*</span></label>
-						<input type="text" class="form-control required" id="contactno" Name="ContactNo" placeholder="Contact No." required>
+						<input type="text" class="form-control required" size="30" id="contactno" Name="ContactNo" placeholder="Contact No." required>
 					</div>
 					<div class="form-group">
 						<label for="query">Query</label>
@@ -200,7 +200,11 @@
 					</div>		
 					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/>
 					</form>
-				
+					
+					<div id="success-msg">
+						Thanks for contacting us!<br/>
+						We will get back to you soon!
+					</div>
 					
 			</div>
 		</div>
@@ -236,7 +240,14 @@ var comment= document.getElementById("comment").value
     Body : (username)+ " <br/> " + (usermail)+ " <br/> " + (contactno) + " <br/> " + (comment),
 	
     }).then(
-       message => alert("mail sent successfully")
+       <!-- message => alert("mail sent successfully") -->
+			function(data){
+				$('#success-msg').fadeIn().appand(data);
+				setTimeout(function() {
+					$('#success-msg').fadeOut("slow");
+				}, 2000 );
+
+			}
     );
 }
 </script>
