@@ -115,32 +115,32 @@
 						<p>Please fill out the form below & complete all the fields.</p>
 					<form method="post" action="" enctype="text/plain">
 						<div class="form-group">
-							<input type="text" class="form-control" id="firstName" Name="First Name"
+							<input type="text" class="form-control required" id="firstName" Name="First Name"
 								placeholder="First Name" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="lastName" Name="Last Name"
+							<input type="text" class="form-control required" id="lastName" Name="Last Name"
 								placeholder="Last Name" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="Company" Name="Company" placeholder="Company"
+							<input type="text" class="form-control required" id="Company" Name="Company" placeholder="Company"
 								required>
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" id="usermailid" Name="MailId"
+							<input type="email" class="form-control required" id="usermailid" Name="MailId"
 								placeholder="E-mail Address" required>
 						</div>
 						<div class="form-group">
-							<input type="test" class="form-control" id="businessNo" Name="businessNo"
+							<input type="test" class="form-control required" id="businessNo" Name="businessNo"
 								placeholder="Business Phone" required>
 						</div>
 						
 						<div class="form-group">
-							<input type="text" class="form-control" id="JobTitle" Name="JobTitle"
+							<input type="text" class="form-control required" id="JobTitle" Name="JobTitle"
 								placeholder="Job Title" required>
 						</div>
 						<div class="form-group">
-							<select class="form-control" id="JobDept" Name="Job Dept"
+							<select class="form-control required" id="JobDept" Name="Job Dept"
 								required>
 								<option value="">Job Department*</option>
 								<option value="Accounting/Finance">Accounting/Finance</option>
@@ -169,7 +169,7 @@
 								<option value="System Integrator">System Integrator</option>
 								</select>
 						</div>
-						<input type="button" value="Submit" onclick="Popupmail()" class="btn btn-default btn-lg btn-block" />
+						<input type="button" value="Submit" onclick="Popupmail()" class="btn btn-default btn-lg btn-block toggle-disabled" disabled />
 					</form>
 				</div>
 
@@ -228,10 +228,10 @@ var JobDept= document.getElementById("JobDept").value
 
     Email.send({
     Host: "smtp.gmail.com",
-    Username : "testajay2020@gmail.com",
-    Password : "ajayarul4",
-    To : "saranyajeyam96@gmail.com",
-    From : "testajay2020@gmail.com",
+    Username : "jsaranya701@gmail.com",
+    Password : "Qwerty@23",
+    To : "saranyajeyam23@gmail.com",
+    From : "jsaranya701@gmail.com",
     Subject : "Enquiry",
     Body : (firstName)+ " <br/> " + (lastName)+ " <br/> " + (Company) + " <br/> " + (usermailid) + " <br/> " + (businessNo)
 	+ " <br/> " + (JobTitle) + " <br/> " + (JobDept),
@@ -241,3 +241,26 @@ var JobDept= document.getElementById("JobDept").value
     );
 }
 </script>
+
+<script>
+ $(document).on('change keyup', '.required', function(e){
+   let Disabled = true;
+    $(".required").each(function() {
+      let value = this.value
+      if ((value)&&(value.trim() !=''))
+          {
+            Disabled = false
+          }else{
+            Disabled = true
+            return false
+          }
+    });
+   
+   if(Disabled){
+        $('.toggle-disabled').prop("disabled", true);
+      }else{
+        $('.toggle-disabled').prop("disabled", false);
+      }
+ })
+
+</script> 

@@ -173,30 +173,34 @@
 					<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
 				</form> -->
 				
-				<form id="reused_form" name="Contactform" method="post" action="" enctype="text/plain">
+				<form id="contact-form" name="Contactform" method="post" action="" enctype="text/plain" onsubmit="return submitfn()">
 					<div class="form-group">
 						<label for="username">  Name <span class="required_lab">*</span></label> 
-						<input type="text" class="form-control" id="username" Name="Name" placeholder="Full Name" required> 
+						<input type="text" class="form-control required" id="username" Name="name" placeholder="Full Name" required> 
 					</div>
 					<div class="form-group">
 						<label for="usermail">Email <span class="required_lab">*</span></label>
-						<input type="email" class="form-control" id="usermail" Name="MailId" placeholder="E-mail" required>
+						<input type="text" class="form-control required" id="usermail" Name="MailId" placeholder="E-mail" required>
 					</div>
 					<div class="form-group">
 						<label for="contactno">Contact No<span class="required_lab">*</span></label>
-						<input type="text" class="form-control" id="contactno" Name="ContactNo"	placeholder="Contact No." required>
+						<input type="text" class="form-control required" id="contactno" Name="ContactNo" placeholder="Contact No." required>
 					</div>
 					<div class="form-group">
-						<label for="comment">Query</label>
-						<select class="form-control" id="comment" Name="Query" required>
-							<option value="">--Select--</option>
-							<option value="">Sales Related Query</option>
-							<option value="">General Information</option>
+						<label for="query">Query</label>
+						<select class="form-control required" id="query">
+							 <option value="" selected  disabled>selected a option</option>
+							<option>--Select--</option>
+							<option>Sales Related Query</option>
+							<option>General Information</option>
 						</select>
-						<!-- <textarea class="form-control" rows="6" id="comment" Name="Query" placeholder="Query" required></textarea> -->
+					</div>
+					<div class="form-group">
+						<textarea class="form-control required" rows="6" id="comment" Name="Query" placeholder="Query" required></textarea> 
 					</div>		
-					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block" id="form-submit" onclick="sendEmail()" />
+					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/>
 					</form>
+				
 					
 			</div>
 		</div>
@@ -215,10 +219,11 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script> 
 <script>
 function sendEmail() {
-var comment= document.getElementById("comment").value
 var username= document.getElementById("username").value
 var usermail= document.getElementById("usermail").value
 var contactno= document.getElementById("contactno").value
+var query= document.getElementById("query").value
+var comment= document.getElementById("comment").value
 
 
     Email.send({
@@ -235,3 +240,25 @@ var contactno= document.getElementById("contactno").value
     );
 }
 </script>
+<script>
+ $(document).on('change keyup', '.required', function(e){
+   let Disabled = true;
+    $(".required").each(function() {
+      let value = this.value
+      if ((value)&&(value.trim() !=''))
+          {
+            Disabled = false
+          }else{
+            Disabled = true
+            return false
+          }
+    });
+   
+   if(Disabled){
+        $('.toggle-disabled').prop("disabled", true);
+      }else{
+        $('.toggle-disabled').prop("disabled", false);
+      }
+ })
+
+</script> 
