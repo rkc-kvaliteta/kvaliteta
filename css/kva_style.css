@@ -1667,6 +1667,16 @@ section.top-space{
 	text-align:center;
 	margin-top:20px;
 }
+#error_message{
+  margin-bottom: 10px;
+  background: #0e600e;
+  border-radius:4px;
+  color:#fff;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
