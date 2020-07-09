@@ -196,6 +196,7 @@
 					</div>
 					<div class="form-group">
 						<textarea class="form-control required" rows="6" id="comment" Name="Query" placeholder="comment" required></textarea> 
+						<div id="error_message"></div>
 					</div>		
 					<input type="button" value="Send Email" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/>
 					</form>
@@ -227,6 +228,19 @@ var usermail= document.getElementById("usermail").value
 var contactno= document.getElementById("contactno").value
 var query= document.getElementById("query").value
 var comment= document.getElementById("comment").value
+var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+
+var text;
+ 
+  if(comment.length <= 100){
+    text = "Please Enter More Than 100 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }else{
+	error_message.style.display="none";
+  }
 
 
     Email.send({
@@ -236,7 +250,7 @@ var comment= document.getElementById("comment").value
     To : "saranyajeyam23@gmail.com",
     From : "jsaranya701@gmail.com",
     Subject : "query",
-    Body : (username)+ " <br/> " + (usermail)+ " <br/> " + (contactno) + " <br/> " + (comment),
+    Body : 'Name :' +(username)+ " <br/> " +'EmailID :' + (usermail)+ " <br/> "+'Contact.No :' + (contactno) + " <br/> " +'Comment :' + (comment),	
 	
     }).then(
        <!-- message => alert("mail sent successfully") -->
