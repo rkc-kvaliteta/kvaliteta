@@ -55,7 +55,7 @@ class WorldMapLocation extends HTMLElement {
         z-index:1;
         display: inline-block;
         position:absolute;
-        background: #0e600e;
+        background: red;
         border-radius: 50%;
         width: 10px;
         height: 10px;
