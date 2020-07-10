@@ -85,7 +85,7 @@ class WorldMapLocation extends HTMLElement {
       .title {
         color: #333;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
         opacity: 0;
         position: absolute;
         bottom: 0;
