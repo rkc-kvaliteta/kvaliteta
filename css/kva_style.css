@@ -589,8 +589,9 @@ div.affix-bottom{
   /*padding-bottom:14%;*/
   padding-bottom:9%;
 }
-.carousel-caption.intro{
+.carousel-caption.intro, .carousel-caption.kite{
 	padding-bottom:8%;
+	text-align:justify;
 }
 .carousel-caption.tech{
     padding-bottom: 8%;
