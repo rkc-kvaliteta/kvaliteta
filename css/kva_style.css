@@ -572,9 +572,8 @@ div.affix-bottom{
 .carousel-caption {
     text-shadow: none;
     font-size: 1.5em; 
-	font-style: italic;
-	text-align:justify;
-	/* font-weight:bold; */
+	font-weight:bold;
+	text-align:justify;	
 }
 .carousel-caption.sdaas-text{
 	padding-bottom:15%;
@@ -597,9 +596,11 @@ div.affix-bottom{
 }
 .carousel-caption.Kite{
 	padding-bottom:5%;
+	text-align:justify;
 	left:15%;
 	right:42%;
-	/* font-weight: 500; */
+	font-weight: 500; 
+	font-style: italic;
 }
 .carousel-caption.tech{
     padding-bottom: 8%;
