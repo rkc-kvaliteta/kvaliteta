@@ -1146,7 +1146,7 @@ border-color: #0e600e;
 
 /************* 6. Approach *************/
 
-.iconbox-content{
+.Kss-content{
 	background-color:#2d2d2d; 
     color:#fff !important;
 	padding:30px 10px 20px 10px;
@@ -1154,7 +1154,7 @@ border-color: #0e600e;
 .main-content{
 	margin:0;
 }
-.iconbox-content p{
+.Kss-content p{
 	text-align:justify;
 }
 
