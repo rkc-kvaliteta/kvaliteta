@@ -1149,7 +1149,7 @@ border-color: #0e600e;
 .Kss-content{
 	background-color:transparent; 
     color:#333 !important;
-	padding:30px 10px 20px 10px;
+	/* padding:30px 10px 20px 10px; */
 }
 .main-content{
 	margin:0;
