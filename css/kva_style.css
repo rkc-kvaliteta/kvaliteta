@@ -1147,8 +1147,8 @@ border-color: #0e600e;
 /************* 6. Approach *************/
 
 .Kss-content{
-	background-color:#2d2d2d; 
-    color:#fff !important;
+	background-color:transparent; 
+    color:#333 !important;
 	padding:30px 10px 20px 10px;
 }
 .main-content{
@@ -1691,6 +1691,25 @@ section.top-space{
   text-align: center;
   font-size: 14px;
   transition: all 0.5s ease;
+}
+
+blockquote {
+  background: transparent;
+  border-left: 10px solid #0e600e;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+/* blockquote:before {
+  color: #0e600e;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+} */
+blockquote p {
+  display: inline;
 }
 /****Media Queries****/
 
