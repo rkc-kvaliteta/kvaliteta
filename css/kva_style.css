@@ -592,6 +592,9 @@ div.affix-bottom{
   left:38%;
   font-weight:bold;
 }
+.carousel-caption.con-world{
+	left:44% !important;
+}
 .carousel-caption.intro{
 	padding-bottom:8%;
 	text-align:justify;
