@@ -1616,7 +1616,7 @@ section.top-space{
 	margin-top:28px;
 }
 .mt-0{
-	margin-top:0px;
+	margin-top:0px !important;
 }
 .dcim-img img{
 	display: block;
