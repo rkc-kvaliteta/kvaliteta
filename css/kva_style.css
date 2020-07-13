@@ -600,9 +600,14 @@ div.affix-bottom{
 	left:38%;
 }
 .carousel-caption.cid {
-    padding-bottom: 0;
+    padding-bottom: 2%;
     left: 3%;
     right: 3%;
+}
+.carousel-caption.D-model {
+    padding-bottom: 3%;
+    left: 15%;
+    right: 1%;
 }
 .carousel-caption.Kite{
 	padding-bottom:7%;
