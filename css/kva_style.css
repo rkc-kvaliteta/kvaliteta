@@ -1704,6 +1704,9 @@ blockquote p {
 .Sp-popup{
 	text-align:justify;
 }
+svg:not(:root) {
+    overflow: hidden;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
