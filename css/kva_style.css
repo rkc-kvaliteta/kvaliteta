@@ -1693,7 +1693,7 @@ section.top-space{
 blockquote {
   background: transparent;
   border-left: 10px solid #0e600e;
-  margin: 0.5em 10px;
+  margin: 0.5em 0px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
