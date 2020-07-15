@@ -1672,6 +1672,10 @@ blockquote p {
 .ent-it h3{
 	color:#333;
 }
+.fade.in {
+    opacity: 1;
+	display:block !important;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
