@@ -1673,7 +1673,6 @@ blockquote p {
 	color:#333;
 }
 .fade.in {
-    opacity: 1;
 	display:block !important;
 }
 /****Media Queries****/
