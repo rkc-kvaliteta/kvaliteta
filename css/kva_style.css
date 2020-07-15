@@ -519,7 +519,7 @@ div.affix-bottom{
 	height:287.498px;
 	width:100%;
 }
-.overlay.Ent-over{
+.overlay.Ent-over, .overlay.about-over{
     background-color: rgba(0,0,0,0.4);
     background-size: cover;
     position: absolute;
@@ -528,33 +528,10 @@ div.affix-bottom{
 	top:0;
     left:0;
 }
-.carousel-inner.Ent-car{
+.carousel-inner.Ent-car, .carousel-inner.sdaas-car, .carousel-inner.about{
 	height:auto;
 }
-.carousel-inner.Ent-car > .item > img{
-	height:auto;
-	width:100%;
-}
-.carousel-inner.about{
-	height:auto;
-}
-.carousel-inner.about > .item > img{
-	height:auto;
-	width:100%;
-}
-.about-over{
-	background-color: rgba(0,0,0,0.4);
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-	top:0;
-    left:0;
-}
-.carousel-inner.sdaas-car{
-	height:auto;
-}
-.carousel-inner.sdaas-car > .item > img{
+.carousel-inner.Ent-car > .item > img, .carousel-inner.sdaas-car > .item > img, .carousel-inner.about > .item > img{
 	height:auto;
 	width:100%;
 }
@@ -611,7 +588,6 @@ div.affix-bottom{
 }
 .carousel-caption.Kite{
 	padding-bottom:7%;
-	text-align:justify;
 	left:15%;
 	right:42%;
 	font-style: italic;
@@ -619,57 +595,46 @@ div.affix-bottom{
 .carousel-caption.tech{
     padding-bottom: 8%;
 	font-size:16px !important;
-	text-align: justify;
 	left:38%;
 }
 .carousel-caption.Kss{
 	padding-left:24%;
 	padding-bottom:4%;
 	font-size: 16px;
-	text-align: justify;
 	right:2% !important;
 }
 .carousel-caption.Ent-car{
 	padding-left:28%;
 	padding-bottom:12%;
 	right:5% !important;
-	text-align:justify;
 	font-size:18px;
 }
 .carousel-caption.Dcim-car{
 	padding-left:28%;
 	padding-bottom:6%;
 	right:5% !important;
-	text-align:justify;
 	font-size:18px;
 }
 .carousel-caption.Con-car{
 	padding-left:28%;
 	padding-bottom:6%;
 	right:5% !important;
-	text-align:justify;
 	font-size:18px;
 }
 .carousel-caption.Coll-car{
 	padding-left:28%;
 	padding-bottom:12%;
 	right:5% !important;
-	text-align:justify;
 	font-size:18px;
 }
 .carousel-caption.Data-car{
 	padding-left:28%;
 	padding-bottom:12%;
 	right:5% !important;
-	text-align:justify;
 	font-size:18px;
 }
 
-/* .Dream{
-	margin-right: 180px;
-} */
-
-		/************* 4.2 -  Landing *************/
+/************* 4.2 -  Landing *************/
 .landing
 {
 	/*padding-top:30px;  21.4.2020*/
