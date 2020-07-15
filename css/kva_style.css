@@ -1704,8 +1704,8 @@ blockquote p {
 .Sp-popup{
 	text-align:justify;
 }
-svg:not(:root) {
-    overflow: hidden;
+.ent-it h3{
+	color:#333;
 }
 /****Media Queries****/
 
