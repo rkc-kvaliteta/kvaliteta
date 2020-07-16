@@ -277,16 +277,13 @@ var JobDept= document.getElementById("JobDept").value
 </script> 
 <!-- Pageload -->
 <script>
-window.addEventListener('load', function(){
-    if (localStorage.pick) {
-        var sel = document.querySelector('#selectX');
-        sel.value = localStorage.pick;
-    }
-});
+$(document).ready(function(){
 
-function getSelectValue(){
-    var sel = document.querySelector('#selectX');
-    localStorage.pick = sel.value;
-    location.reload();
-}
+    $(".Reload-link").click(function(){
+
+     location.reload();
+
+    });
+
+});
 </script>
