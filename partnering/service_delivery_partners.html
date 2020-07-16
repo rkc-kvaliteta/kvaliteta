@@ -277,13 +277,8 @@ var JobDept= document.getElementById("JobDept").value
 </script> 
 <!-- Pageload -->
 <script>
-$(document).ready(function(){
-
-    $(".Reload-link").click(function(){
-
-     location.reload();
-
-    });
-
+$('.Reload-link').click(function(e){
+	e.preventDefault();
+	location.reload();
 });
 </script>
