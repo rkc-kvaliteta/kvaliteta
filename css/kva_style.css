@@ -1013,16 +1013,20 @@ border-color: #0e600e;
 	top:160px;
 }
 .modal-content.service-partner {
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 0px !important;
   border: none;
+  box-shadow: 0px 5px 7px rgba(0,0,0,.5) !important; 
 }
 .modal-header.service {
   border-bottom-color: #EEEEEE;
   background-color: #FAFAFA;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  border-radius: 20px 0px 0px 20px;
+   display: block;
+   border-radius: 0px !important;
+}
+.partner-btn input[type="button"]{
+	display: block;
+	margin: 0px auto;
+	width: auto;
 }
 .close-btn{
 	font-size:30px;
