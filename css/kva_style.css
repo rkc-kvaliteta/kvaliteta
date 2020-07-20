@@ -1665,9 +1665,61 @@ blockquote p {
 .ent-it h3{
 	color:#333;
 }
-/* .fade.in {
-	display:block !important;
-} */
+
+/*20.7.2020*/
+section.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998 !important;
+}
+.modal-title{
+	padding:10px 0px;
+	margin:0px 30px;
+}
+section.modalWindow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 78%;
+	right:0;
+    z-index: 999 !important;
+    width: 600px;
+    min-height: 200px;
+    margin-left: -300px;
+    background: #FFF;
+    cursor: default;
+	border-radius:20px 0px 0px 20px;
+}
+section.modal.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 997;
+    cursor: pointer;
+	margin:0;
+}
+section.modalWindow section.modalWrapper {
+    margin: 10px 30px;
+    border: 1px solid #DADADA;
+    padding: 15px;
+    text-align: left;
+    line-height: 20px !important;
+	/* height: 300px; */
+}
+.closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+	font-size:30px;
+	text-decoration:none !important;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
@@ -1723,26 +1775,15 @@ blockquote p {
 	.panel-heading{
 		padding:10px 5px;
 	}
-	/* .carousel-caption.middle{
-	  padding-bottom:42%;
-	}
-	.Dream {
-		margin-right: 42px;
-	}
-	.carousel-caption.frame {
-		text-align: left;
-		margin-right: 20%;
-		padding-bottom: 35% !important;
-	}
-	.carousel-caption.tech{
-		padding-bottom: 0%;
-		font-size:10px !important;
-	} */
 	
 	/**8.7.2020**/
 	.modal.right .modal-dialog {
 		width: 250px;
 	}	
+	/*20.7.2020*/
+	section.modalWindow {
+		width:auto !important;
+	}
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -1799,21 +1840,15 @@ blockquote p {
 	.panel-heading{
 		padding:10px 5px;
 	}
-	/* .carousel-caption.middle{
-	  padding-bottom:34%;
-	}
-	.Dream {
-		margin-right: 36px;
-	}
-	.carousel-caption.frame {
-		text-align: left;
-		margin-right: 24%;
-		padding-bottom: 30% !important;
-	} */
+	
 	/**8.7.2020**/
 	.modal.right .modal-dialog {
 		width: 250px;
-	}	
+	}
+	/*20.7.2020*/
+	section.modalWindow {
+		width:auto !important;
+	}
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -1863,21 +1898,15 @@ blockquote p {
 	.panel-heading{
 		padding:10px 5px;
 	}
-	/* .carousel-caption.middle{
-	  padding-bottom:27%;
-	}
-	.Dream {
-		margin-right: 54px;
-	}
-	.carousel-caption.frame {
-		text-align: left;
-		margin-right: 24%;
-		padding-bottom: 27% !important;
-	} */
+
 	/**8.7.2020**/
 	.modal.right .modal-dialog {
 		width: 320px;
 	}	
+	/*20.7.2020*/
+	section.modalWindow {
+		width:auto !important;
+	}
 }
 @media screen and (min-width: 540px) and (max-width:600px){
 	#nav2 .navbar-brand {
@@ -1904,21 +1933,15 @@ blockquote p {
 	.modal-title{
 		font-size:20px;
 	}
-	/* .carousel-caption.middle{
-	  padding-bottom:25%;
-	}
-	.Dream {
-		margin-right: 72px;
-	}
-	.carousel-caption.frame {
-		text-align: left;
-		margin-right: 22%;
-		padding-bottom: 24% !important;
-	} */
+
 	/**8.7.2020**/
 	.modal.right .modal-dialog {
 		width: 320px;
 	}	
+	/*20.7.2020*/
+	section.modalWindow {
+		width:auto !important;
+	}
 }
 @media screen and (min-width: 600px) and (max-width:767px){
 	#nav2 .navbar-brand {
@@ -1942,22 +1965,15 @@ blockquote p {
 	#myCarousel {
 		display:none !important;
 	}
-	/* .carousel-caption.middle{
-	  padding-bottom:17%;
-	  font-size:20px;
-	}
-	.Dream {
-		margin-right: 100px;
-	}
-	.carousel-caption.frame {
-		text-align: left;
-		margin-right: 24%;
-		padding-bottom: 16% !important;
-	} */
+	
 	/**8.7.2020**/
 	.modal.right .modal-dialog {
 		width: 500px;
 	}	
+	/*20.7.2020*/
+	section.modalWindow {
+		width:auto !important;
+	}
 }
 @media screen and (min-width: 768px) and (max-width:800px){
 	.logo-bar .logo-1 {
@@ -1971,9 +1987,6 @@ blockquote p {
 		padding-bottom:16%;
 		font-size: 22px;
 	}
-	/* .Dream {
-		margin-right: 113px;
-	} */
 	.carousel-caption.frame {
 		text-align: left;
 		margin-right: 20%;
