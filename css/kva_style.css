@@ -1675,8 +1675,8 @@ section.modal {
     left: 0;
     z-index: 998 !important;
 }
-.modal-title{
-	padding:10px 0px;
+.partner-title{
+	padding:10px 0px 0px 30px;
 	margin:0px;
 }
 section.modalWindow {
