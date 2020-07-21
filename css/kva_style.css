@@ -1677,7 +1677,7 @@ section.modal {
 }
 .modal-title{
 	padding:10px 0px;
-	margin:0px 30px;
+	margin:0px;
 }
 section.modalWindow {
     display: none;
