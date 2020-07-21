@@ -1038,6 +1038,7 @@ border-color: #0e600e;
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 20px 20px 0px 0px;
+  padding:10px !important;
 }
 .modal-header .close{
 	padding: 1rem 1rem;
