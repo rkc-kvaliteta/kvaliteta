@@ -268,7 +268,7 @@ a.thumbnail:active{
 .navbar ul.nav li a {
     color: #000;
     font-size: 16px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 	padding-bottom:10px;
 	padding-top:10px;
 	text-align: center;
@@ -1730,7 +1730,7 @@ section.modalWindow section.modalWrapper {
 	.navbar ul.nav li a {
 		color: #000;
 		font-size: 10px;
-		vertical-align: middle;
+		/* vertical-align: middle; */
 		padding-bottom: 5px;
 		padding-top: 20px;
 		text-align: center;
@@ -1794,7 +1794,7 @@ section.modalWindow section.modalWrapper {
 	.navbar ul.nav li a {
 		color: #000;
 		font-size:12px;
-		vertical-align: middle;
+		/* vertical-align: middle; */
 		padding-bottom: 5px;
 		padding-top: 20px;
 		text-align: center;
@@ -1860,7 +1860,7 @@ section.modalWindow section.modalWrapper {
 		color: #000;
 		/*font-size: 16px;*/
 		font-size:14px;
-		vertical-align: middle;
+		/* vertical-align: middle; */
 		padding-bottom: 5px;
 		padding-top: 20px;
 		text-align: center;
