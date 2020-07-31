@@ -1729,7 +1729,7 @@ section.modalWindow section.modalWrapper {
 	color:blue;
 	padding:20px;
 }
-.plainbox{
+.plainbox:hover{
 	box-shadow: 2px 2px 10px 2px blue;
 }
 /****Media Queries****/
