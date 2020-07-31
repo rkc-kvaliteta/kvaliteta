@@ -1726,11 +1726,11 @@ section.modalWindow section.modalWrapper {
 }
 .contact-mail i {
 	font-size:40px;
-	color:darkcyan;
+	color:#0e600e;
 	padding:20px;
 }
 .plainbox:hover{
-	box-shadow: 2px 2px 10px 2px darkcyan;
+	box-shadow: 2px 2px 10px 2px #0e600e;
 }
 /****Media Queries****/
 
