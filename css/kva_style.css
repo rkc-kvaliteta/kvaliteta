@@ -1020,7 +1020,7 @@ border-color: #0e600e;
 .modal-header.service {
   border-bottom-color: #EEEEEE;
   background-color: #FAFAFA;
-   display: block;
+  display: block;
    border-radius: 0px !important;
 }
 .partner-btn input[type="button"]{
@@ -1034,7 +1034,7 @@ border-color: #0e600e;
 .modal-header {
   border-bottom-color: #EEEEEE;
   background-color: #FAFAFA;
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 20px 20px 0px 0px;
