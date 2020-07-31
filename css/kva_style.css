@@ -1721,6 +1721,17 @@ section.modalWindow section.modalWrapper {
 	font-size:30px;
 	text-decoration:none !important;
 }
+.contact-mail{
+	text-align:center;
+}
+.contact-mail i {
+	font-size:40px;
+	color:blue;
+	padding:20px;
+}
+.plainbox{
+	box-shadow: 2px 2px 10px 2px blue;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
