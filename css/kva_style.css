@@ -595,7 +595,8 @@ div.affix-bottom{
 .carousel-caption.tech{
     padding-bottom: 8%;
 	font-size:16px !important;
-	left:38%;
+	left:20%;
+	right:20%;
 }
 .carousel-caption.Kss{
 	padding-left:24%;
