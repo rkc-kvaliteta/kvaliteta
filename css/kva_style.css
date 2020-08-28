@@ -558,7 +558,7 @@ div.affix-bottom{
 }
 .carousel-caption.frame{
 	text-align: left;
-	margin-right: 20%;
+	margin-right: 22%;
 	padding-bottom:9% !important;
 	right:25% !important;
 	left:12% !important;
@@ -1732,6 +1732,16 @@ section.modalWindow section.modalWrapper {
 }
 .plainbox:hover{
 	box-shadow: 2px 2px 10px 2px #0e600e;
+}
+/*28.8.2020*/
+#intro, #CiD-Area, #techAreas{
+	min-height:446px;
+	position:relative;
+}
+#intro h4, #CiD-Area h4, #techAreas h4{
+	position:absolute;                  
+	bottom:0;                          
+	left:0; 
 }
 /****Media Queries****/
 
