@@ -638,6 +638,11 @@ div.affix-bottom{
 	right:5% !important;
 	font-size:18px;
 }
+.sdaas-car .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
 
 /************* 4.2 -  Landing *************/
 .landing
