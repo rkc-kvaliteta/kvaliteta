@@ -11,64 +11,67 @@
 			</ul>
 		</div>
 		<!--Carousel-->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="slider" class="carousel slide col-xs-6 padd-lt0" data-ride="carousel">
 			<!-- Indicators -->
-			<ol class="carousel-indicators">
+			<!-- <ol class="carousel-indicators">
 			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			  <li data-target="#myCarousel" data-slide-to="1"></li>
 			  <li data-target="#myCarousel" data-slide-to="2"></li>
 			  <li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
+			</ol> -->
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner sdaas-car">
 
 				<div class="item active">
 					<div class="overlay sdaas-over"></div>
-					<img src="img/SDaas-carousel.jpg" alt="You Dream IT, We Deliver IT" class="img-responsive fill">
-						<div class="carousel-caption sdaas-text">
-							<span>Using modern & responsive integrated practices, we design, develop, test & deliver optimized software.</span>
-						</div>
+					<img src="img/SDaas-carousel.jpg" alt="You Dream IT, We Deliver IT" class="img-responsive fill">						
 				</div>
 
 				<div class="item">
 					<div class="overlay sdaas-over"></div>
 					<img src="img/kite-carousel.jpg" alt="SDaaS" class="img-responsive fill">
-						<div class="carousel-caption Kite">
-							<span>
-								From an engineering point of view, a Kite is a tethered airplane which adheres to the same laws of physics as airplanes do Yet Kites are quick to make easy to fly and they work really well They give you few design choices but the designs are big enough for you to reach desired heights Some are large and are made to look good, but some are smaller and are made for speed It's motivating to see the end result floating about in the sky!
-							</span>
-						</div>
 				</div>
 
 				<div class="item">
 					<div class="overlay sdaas-over"></div>
 					<img src="img/cid-carousel.jpg" alt="Enterprise-IT" class="img-responsive fill">
-						<div class="carousel-caption cid">
-							<span>
-								A modular framework, for flexible customizable development of Capture, Identification and Deduplication (CiD) applications. 
-							</span>
-						</div>
 				</div>
 				<div class="item">
 					<div class="overlay sdaas-over"></div>
 					<img src="img/dmodel-carousel.jpg" alt="Service Provider" class="img-responsive fill">
-						<div class="carousel-caption D-model">
-							Simplifying the development methodology, with a focus on Themes, Goals, Metrics & Scaling.
-						</div>
 				</div>
 				
 			</div>
 
 			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<a class="left carousel-control" href="#slider" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<a class="right carousel-control" href="#slider" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right"></span>
 				<span class="sr-only">Next</span>
 			</a>
+			<div id="slider_captions" class="col-xs-12">
+				<div>
+					<div id="caption-0" class="carousel-caption">
+						<p>Using modern & responsive integrated practices, we design, develop, test & deliver optimized software.</p>
+					</div>
+					<div id="caption-1" class="carousel-caption">
+						<p>From an engineering point of view, a Kite is a tethered airplane which adheres to the same laws of physics as airplanes do Yet Kites are quick to make easy to fly and they work really well 
+						They give you few design choices but the designs are big enough for you to reach desired heights Some are large and are made to look good, 
+						but some are smaller and are made for speed It's motivating to see the end result floating about in the sky!</p>
+					</div>
+					<div id="caption-2" class="carousel-caption">
+						<p>A modular framework, for flexible customizable development of Capture, Identification and Deduplication (CiD) applications. </p>
+					</div>
+					<div id="caption-3" class="carousel-caption">
+						<p>Simplifying the development methodology, with a focus on Themes, Goals, Metrics & Scaling.</p>
+					</div>
+				</div>
+			 </div>
+			 
 		</div>
 		
             <!--<div class="jumbotron">
@@ -86,6 +89,19 @@
 	$('.navbar-lower').affix({
   offset: {top: 50}
 });
+
+</script>
+<script>
+
+$("#slider").on('slide.bs.carousel', function(evt) {
+
+	   var step = $(evt.relatedTarget).index();
+
+	   $('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
+	   		$('#caption-'+step).fadeIn();
+	   });
+
+	});
 
 </script>
 <script type='text/javascript'>
