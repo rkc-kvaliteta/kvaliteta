@@ -562,7 +562,7 @@ div.affix-bottom{
 	margin-right: 22%;
 	padding-bottom:9% !important;
 	right:25% !important;
-	left:12% !important;
+	left:10% !important;
 }
 .carousel-caption.middle{
   /*padding-bottom:14%;*/
@@ -570,8 +570,11 @@ div.affix-bottom{
   left:38%;
   font-weight:bold;
 }
+.carousel-caption.cloud{
+	left:33%;
+}
 .carousel-caption.con-world{
-	left:44% !important;
+	left:35% !important;
 }
 .carousel-caption.intro{
 	padding-bottom:8%;
