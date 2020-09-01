@@ -1,0 +1,68 @@
+<head>
+	<title>KITE | Kvaliteta</title>
+</head>
+
+<section class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread">
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
+		</ul>
+	</div>
+	<div class="SDaas-content">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="tab-content" id="kite-bg">
+					<div class="model bg-black" id="kite-isms">
+						<h3 class="mtop-0"> iSMS</h3>
+						<p>It's time for an alternative to traditional university/college/school prospect and student
+							management software and student data systems. Instead of depending old student information
+							system intranet applications, our software architects has designed a portal solution which gives
+							a modern approach to bring a collaborative environment in the field of education between
+							student, staff and faculty.</p>
+						<p>Today’s technology environment brings new challenges that inspire innovation and mark 
+							true leadership. We understand the challenges and relish the opportunities that technology puts within our reach to communicate, collaborate and create.</p>
+						<p>It’s aim for an alternative to traditional university/college/school prospects, student 
+							management software & student data systems. Instead of depending on old student information systems & intranet applications, our software architects have designed a portal solution which gives a modern approach to bring a collaborative environment in the field of education between students, staffs and faculty.</p>
+						<p>Our solution simplifies, yet advances the integrated student management system. Deploying 
+							the iSMS solution into your education organization will do more than just collecting student data – helps to have a better student information systems, admission, enrolment, academics, alumni services, administration, manage classrooms, buildings and eLearning</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="isms" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>

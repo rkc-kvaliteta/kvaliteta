@@ -1,0 +1,59 @@
+<head>
+	<title>KITE | Kvaliteta</title>
+</head>
+
+<section class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread">
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
+		</ul>
+	</div>
+	<div class="SDaas-content">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="tab-content" id="kite-bg">
+					<div class="model bg-black" id="kite-dashboard">
+						<h3 class="mtop-0"> Dashboard</h3>
+						<p>A data dashboard is an information management tool that visually tracks, analyzes ,metrics and 
+							key data points to monitor the health of a business, department or specific process. They are customizable to meet the specific needs of a department and company. Behind the scenes, a dashboard connects to your files, attachments, services and API’s, but on the surface displays all this data in the form of tables, line charts, bar charts and gauges.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="dashboard" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
