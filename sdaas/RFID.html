@@ -1,0 +1,71 @@
+<head>
+	<title>CID</title>
+</head>
+
+<section id="cid" class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread" >
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/cid">CiD</a></li>
+		</ul>
+	</div>
+	<div class="content-top">
+		<div class="row">
+			
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<div class="tab-content">
+					<div class="model" id="RFID">
+						<h3 class="mtop-0"> RFID</h3>
+						<p>RFID is an acronym for Radio Frequency Identification - The use of wireless communications to establish the identity of a physical object. RFID term is used to describe a system that transmits the identity (in the form of a unique serial number – EPC – Electronic Product Code) of an object wirelessly, using radio waves. RFID technology provides wireless identification of people, books or assets. A RFID tag is attached to an object and contains information about that object.</p>
+						
+						<p><b> Features & technical sects. of network biometric RFID readers, </b></p>
+							<ul class="kva-list">								
+								<li><i class="fas fa-chevron-right"></i>Read and write functions.</li>
+								<li><i class="fas fa-chevron-right"></i>Compact size & Wall mountable.</li>
+								<li><i class="fas fa-chevron-right"></i>User friendly interface.</li>
+								<li><i class="fas fa-chevron-right"></i>Stores Data.</li>
+								<li><i class="fas fa-chevron-right"></i>Finger prints images.</li>
+								<li><i class="fas fa-chevron-right"></i>Attendance record 50,000 to 1,00,000 Record.</li>
+								<li><i class="fas fa-chevron-right"></i>Remote control & real time access & monitoring by Server Program.</li>
+								<li><i class="fas fa-chevron-right"></i>Authentication media : Finger print / Password / RFID card / combination</li>
+							</ul>					
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="cid-img">
+					<img src="img/" alt="RFID" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
