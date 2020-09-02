@@ -1,0 +1,65 @@
+<head>
+	<title>KITE | Kvaliteta</title>
+</head>
+
+<section class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread">
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
+		</ul>
+	</div>
+	<div class="SDaas-content">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="tab-content" id="kite-bg">
+					<div class="model bg-black" id="kite-mcare">
+						<h3 class="mtop-0"> mCare</h3>
+						<p>mCare Portal Solution designed for Health organizations which connect hospitals, pharmacies, 
+							labs and other health related services with patients. The mCare Portal solution provides a collaborative environment for patients, doctors, pharmacists and other service providers in the presence of health organizations</p>
+						<p>Kvaliteta’s mCare Portal Solution designed for Health organizations which connect 
+							hospitals, 	pharmacies, labs and other health related services with patients. The mCare Portal solution providesa collaborative environment for patients, doctors, pharmacists and other service providers in the presence of health organizations.</p>
+						<p>The portal works closely with healthcare professionals, hospitals,health organizations, 
+							the government health department and vendors. eMedical records will have the individual or family medical records, treatments and medication, received lab results; all including the complete medical history of the individual or family members, which can be obtained for the future medication.</p>
+						<p>Patients or any consumers can view their or family eMedical records, ePrescription and can 
+							also update the Profile Insurance and eHealth Plan Subscription details. They can also review the doctor’s profile, hospital/clinic profiles and the details about of the medications that were prescribed.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="mcare" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>

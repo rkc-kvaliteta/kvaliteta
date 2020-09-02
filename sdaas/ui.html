@@ -1,0 +1,70 @@
+<head>
+	<title>KITE | Kvaliteta</title>
+</head>
+
+<section class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread">
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
+		</ul>
+	</div>
+	<div class="SDaas-content">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="tab-content" id="kite-bg">
+					<div class="model bg-black" id="kite-ui">
+						<h4 class="mtop-0"> Portal UI</h4>
+						<p>A point of human-computer interaction with a responsive theme that allows a website's information
+							to be displayed. It allows a user to create a site that is optimized for each platform, both in
+							navigation, readability and load time.</p>
+						<!---CSS-->
+						<h4>CSS</h4>
+						<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+						<!---HTML-->
+						<h4>HTML</h4>
+						<p>HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images. </p>
+						<!---JS-->
+						<h4>Javascript</h4>
+						<p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="ui" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
+						

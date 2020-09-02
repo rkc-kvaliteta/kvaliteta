@@ -1,0 +1,69 @@
+<head>
+	<title>KITE | Kvaliteta</title>
+</head>
+
+<section class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread">
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
+		</ul>
+	</div>
+	<div class="SDaas-content">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="tab-content" id="kite-bg">
+					<div class="model bg-black" id="kite-rms">
+						<h3 class="mtop-0"> RMS</h3>
+						<p>Resource Management Systems (RMS) provides full professional employer services for our clients. 
+							This means that we become the legal employer of record for your employees. You are effectively outsourcing global payroll, HR and legal functions to us.</p>
+						<p>A resource is anything that is needed to execute a task or project — this can be the skill 
+							sets of employees or the adoption of software.</p>
+						<p><strong>The advantages of resource management</strong></p>
+						<ul>								
+							<li><i class="fas fa-chevron-right"></i> Avoids unforeseen hiccups</li>
+							<li><i class="fas fa-chevron-right"></i> Prevents burnout</li>
+							<li><i class="fas fa-chevron-right"></i> Provides a safety net</li>
+							<li><i class="fas fa-chevron-right"></i> Builds transparency</li>
+							<li><i class="fas fa-chevron-right"></i> Measures efficiency</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="teamspace" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
