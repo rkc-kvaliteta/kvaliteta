@@ -1,0 +1,68 @@
+<head>
+	<title>KITE | Kvaliteta</title>
+</head>
+
+<section class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread">
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
+		</ul>
+	</div>
+	<div class="SDaas-content">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="tab-content" id="kite-bg">
+					<div class="model bg-black" id="kite-eserve">
+						<h3 class="mtop-0"> eServe</h3>
+						<p>eServe is a solution designed and crafted such that it changes how the citizens relate to the
+							government as much as it changes how citizens relate to each other. eServe refers to information
+							and communication technology enabled route to better governance.</p>
+						<p>We believe that e-Governance is not just about one-way service delivery over the Internet 
+							or about electronic access to government information or electronic payments.</p>
+						<p>eServe is a solution designed and crafted such that it changes how the citizens relate 
+							to the government as much as it changes how citizens relate to each other.</p>
+						<p>Automation is the key to e-Governance projects for the days ahead. We are very closely 
+							associated with the e-Governance sector, with our operations spanning multiple countries.</p>
+						<p>The digitalization of operations ensures smoother information flow which provide major 
+							advantages to policy making, measuring performance, building consensus by collaboration and feedback, increase revenue, thus truly offering a responsive Government.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="eserve" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
