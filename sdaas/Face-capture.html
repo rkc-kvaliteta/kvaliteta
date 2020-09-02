@@ -1,0 +1,61 @@
+<head>
+	<title>CID</title>
+</head>
+
+<section id="cid" class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread" >
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/cid">CiD</a></li>
+		</ul>
+	</div>
+		<!-- <h2 class="text-center">CiD FRAMEWORK</h2> -->
+	<div class="content-top">
+	<div class="row">
+		
+		<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			<div class="tab-content">
+				<div class="model" id="Face-capture">
+					<h3 class="mtop-0"> Face Capture</h3>
+					<p>Face Capture is a high-speed real-time ICAO/ISO compliant checking solution for static and streamed image content. It offers a full-fledged software toolbox assuring high-quality output for your facial image analysis and enrolment solutions, and the generation of photos suitable for facial recognition. </p>
+					<p>While processing an image stream, the Face Capture enables to detect face(s) in the images based on preset parameters (e.g. Minimal/maximal eye distance), evaluate the pertinent characteristics and extract the chosen frames for further processing.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="kite-img">
+					<img src="img/" alt="Face-capture" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
