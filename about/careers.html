@@ -12,7 +12,108 @@
 		<div class="row">
 			
 			<div class="col-sm-4 col-md-4">
-				<div class="panel panel-default panel-hover text-center no-border-radius" style="color:rebeccapurple">
+				<!--3.9.2020-->
+				<div class="personal-career">
+					<h3>Personal Information</h3>
+					<form id="personal-form" method="POST" onsubmit="return submitUserForm();">
+						<div class="tab">
+							<div class="form-group">
+								<label for="username">Full Name <span class="required_lab">*</span></label> 
+								<input type="text" class="form-control required1" id="name" name="name" placeholder="Full Name" required> 
+							</div>
+							<div class="form-group">
+								<label for="username">Current Address <span class="required_lab">*</span></label> 
+								<input type="text" class="form-control required1" id="address" name="address" placeholder="current address" required> 
+							</div>
+						</div>
+						<div class="tab">
+							<div class="form-group">
+								<label for="username">Email <span class="required_lab">*</span></label> 
+								<input type="email" class="form-control required1" oninput="this.className = ''" id="email" name="email" placeholder="Email" required> 
+							</div>
+							<div class="form-group">
+								<label for="contactno">Contact No<span class="required_lab">*</span></label>
+								<input type="text" class="form-control required1" oninput="this.className = ''" id="ph-no" name="ph-no" placeholder="Contact No." required>
+							</div>
+						</div>
+						<div class="tab">
+							<div class="form-group">
+								<label for="contactno">Applying Position<span class="required_lab">*</span></label>
+								<input type="text" class="form-control required1" oninput="this.className = ''" id="position" name="position" placeholder="Applying Position" required>
+							</div>
+							<div class="form-group">
+								<label for="contactno">Working Experience<span class="required_lab">*</span></label>
+								<!-- <input type="number" class="form-control required" id="exp" name="exp" placeholder="working exp" required> -->
+								<select class="form-control required1" id="work-career">
+									<option>-- Select --</option>
+									<option value="fresher">Fresher</option>
+									<option value="experienced">Experienced</option>
+								</select>
+							</div>
+						</div>
+				
+						<div class="prev-company emp-form" id="experienced">
+							
+							<h3>Previous Current Employee Detaills</h3>
+							<div class="tab">
+								<div class="form-group">
+									<label for="username">Company Name <span class="required_lab">*</span></label> 
+									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-company" name="name" placeholder="Company Name" required> 
+								</div>
+								<div class="form-group">
+									<label for="username">Roll <span class="required_lab">*</span></label> 
+									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-roll" name="name" placeholder="Roll" required> 
+								</div>
+							</div>
+							<div class="tab">
+								<div class="form-group">
+									<label for="username">Duration <span class="required_lab">*</span></label> 
+									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-duration" name="name" placeholder="Duration" required> 
+								</div>
+								<div class="form-group">
+									<label for="username">Reference <span class="required_lab">*</span></label> 
+									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-ref" name="name" placeholder="Reference" required> 
+								</div>							
+								<div class="form-group">
+									<label for="contactno">Resume <span class="required_lab">*</span></label>
+									<input type="file" class="form-control required1" oninput="this.className = ''" id="exp-resume" name="resume" placeholder="Resume" required>
+								</div>
+							</div>
+						</div>
+						
+						<div class="fresher emp-form" id="fresher">
+							<div class="tab">
+								<div class="form-group">
+									<h3>Fresher</h3>
+									<label for="username">Roll <span class="required_lab">*</span></label> 
+									<input type="text" class="form-control required1" oninput="this.className = ''" id="fresher-name" name="name" placeholder="Roll" required> 
+								</div>
+								<div class="form-group">
+									<label for="contactno">Resume <span class="required_lab">*</span></label>
+									<input type="file" class="form-control required1" oninput="this.className = ''" id="fresher-resume" name="resume" placeholder="Resume" required>
+								</div>
+							</div>
+						</div>
+						<div style="overflow:auto;">
+							<div style="float:right;">
+							  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+							  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+							</div>
+						 </div>
+						  <!-- Circles which indicates the steps of the form: -->
+						 <div style="text-align:center;margin-top:40px;">
+							<span class="step"></span>
+							<span class="step"></span>
+							<span class="step"></span>
+							<span class="step"></span>
+						 </div>
+						<!-- <button type="submit" id="check" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
+							Submit
+						</button>  -->
+					</form>			
+				</div>
+				
+				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:rebeccapurple">
 					<div class="panel-heading no-border">
 						<i class="far fa-building fa-5x"></i>
 						<h3>WHY KVALITETA</h3>
@@ -20,10 +121,25 @@
 					<div class="panel-body">
 					Kvaliteta is an equal opportunities employer. We do not discriminate on any grounds. We value the diversity of the markets in which we operate.
 					</div>
-					</div>
+					</div> -->
 			</div>
 			<div class="col-sm-4 col-md-4">
-				<div class="panel panel-default panel-hover text-center no-border-radius" style="color:salmon;">
+				<!--3.9.2020-->
+				<div class="contact-career" id="con-form">
+					<h3>Contact Information</h3>
+					<form method="post" class="con-form" onsubmit="return submitUserForm();">
+						<div class="form-group">
+							<label for="username">Email <span class="required_lab">*</span></label> 
+							<input type="email" class="form-control required" id="email" name="email" placeholder="Email" required> 
+						</div>
+						<div class="form-group">
+							<label for="contactno">Contact No<span class="required_lab">*</span></label>
+							<input type="text" class="form-control required" id="ph-no" name="ph-no" placeholder="Contact No." required>
+						</div>
+					</form>
+				</div>
+			
+				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:salmon;">
 					<div class="panel-heading no-border">
 						<i class="fa fa-life-ring fa-5x"></i>
 						<h3 style="color:salmon">LIFE @ KVALITETA</h3>
@@ -31,10 +147,25 @@
 					<div class="panel-body">
 					Working at Kvaliteta means being part of an experienced and a dynamic team that passionately believes in being flexible, working hard and having fun.
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="col-sm-4 col-md-4">
-				<div class="panel panel-default panel-hover text-center no-border-radius" style="color:mediumaquamarine">
+				<!--3.9.2020-->
+				<div class="edu-career" id="edu-form">
+					<h3>Education Information</h3>
+					<form class="edu-form">
+						<div class="form-group">
+							<label for="username">Higher Qualification <span class="required_lab">*</span></label> 
+							<input type="text" class="form-control required" id="email" name="email" placeholder="Higher Qualification" required> 
+						</div>
+						<div class="form-group">
+							<label for="username">Additional Courses <span class="required_lab">*</span></label> 
+							<input type="text" class="form-control required" id="email" name="email" placeholder="Additional Courses" required> 
+						</div>
+					</form>
+				</div>
+			
+				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:mediumaquamarine">
 					<div class="panel-heading no-border">
 						<i class="fa fa-fire fa-5x"></i>
 						<h3 style="color:mediumaquamarine">APPLY</h3>
@@ -45,7 +176,7 @@
 					<br>
 					<br>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			</div>
 		</div>
@@ -56,4 +187,187 @@
 	$('.navbar-lower').affix({
   offset: {top: 50}
 });
+</script>
+<script>
+   $(function() {
+        $('#work-career').change(function(){
+            $('.emp-form').hide();
+            $('#' + $(this).val()).show();
+			var selection=$(this).val();
+			if(selection=="fresher")
+			{
+			$('#exp-company').removeClass('required1');
+			$('#exp-duration').removeClass('required1');
+			$('#exp-roll').removeClass('required1');
+			$('#exp-resume').removeClass('required1');
+			$('#exp-ref').removeClass('required1');
+			
+			$('#fresher-name').addClass('required1');
+			$('#fresher-resume').addClass('required1');
+			
+			//document.getElementById("fre-tab-div").style.display = "block";
+			}
+			if(selection=="experienced")
+			{
+			$('#fresher-name').removeClass('required1');
+			$('#fresher-resume').removeClass('required1');
+			
+			$('#exp-company').addClass('required1');
+			$('#exp-duration').addClass('required1');
+			$('#exp-roll').addClass('required1');
+			$('#exp-resume').addClass('required1');
+			$('#exp-ref').addClass('required1');
+			
+			}
+        });
+    });
+</script>
+
+ <script>
+ $("#personal-form").on('change keyup', '.required1', function(e){
+	
+   let Disabled = true;
+    $(".required1").each(function() {
+      let value = this.value
+      if ((value)&&(value.trim() !=''))
+          {
+            Disabled = false
+          }else{
+            Disabled = true
+            return false
+          }
+    });
+   
+   if(Disabled){
+        $('.toggle-disabled').prop("disabled", true);
+      }else{
+        $('.toggle-disabled').prop("disabled", false);
+      }
+ })
+
+</script>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+
+var workselection=$("#work-career").val();
+
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+if(workselection=="fresher" && n==3)
+{
+	x[n+2].style.display = "block";
+	currentTab+=2;
+}
+else{
+ x[n].style.display = "block";
+ }
+
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function prevTab(n) {
+
+  // This function will display the specified tab of the form...
+var x = document.getElementsByClassName("tab");
+ x[n].style.display = "block";
+ 
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+
+   var workselection=$("#work-career").val();
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+ 
+ if(currentTab==5)
+  {
+  currentTab = currentTab + n;
+  currentTab = currentTab + n;
+  currentTab = currentTab + n;
+  }
+  else{ 
+  currentTab = currentTab + n;
+  }
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("personal-form").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  if(currentTab==2 && workselection=="fresher" && n==-1)
+  {
+  prevTab(currentTab);
+  }
+  else{
+  showTab(currentTab);
+  }
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
 </script>
