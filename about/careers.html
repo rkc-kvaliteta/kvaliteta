@@ -106,6 +106,7 @@
 							<span class="step"></span>
 							<span class="step"></span>
 							<span class="step"></span>
+							<span class="step"></span>
 						 </div>
 						<!-- <button type="submit" id="check" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
 							Submit
@@ -164,7 +165,11 @@
 						</div>
 					</form>
 				</div>
-			
+				<div class="career-submit">
+					<button type="submit" id="check" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
+						Submit
+					</button>
+				</div>
 				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:mediumaquamarine">
 					<div class="panel-heading no-border">
 						<i class="fa fa-fire fa-5x"></i>
@@ -224,10 +229,10 @@
 </script>
 
  <script>
- $("#personal-form").on('change keyup', '.required1', function(e){
+ $(document).on('change keyup', '.required', function(e){
 	
    let Disabled = true;
-    $(".required1").each(function() {
+    $(".required").each(function() {
       let value = this.value
       if ((value)&&(value.trim() !=''))
           {
@@ -246,6 +251,7 @@
  })
 
 </script>
+
 
 <script>
 var currentTab = 0; // Current tab is set to be the first tab (0)
