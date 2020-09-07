@@ -1872,11 +1872,16 @@ button:hover {
 .step.active {
   opacity: 1;
 }
-
 /* Mark the steps that are finished and valid: */
 .step.finish {
   background-color: #0e600e;
 }
+
+/* 7.9.2020 map-label */
+.map-lable img{
+	width:auto !important;
+}
+
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
