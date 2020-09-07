@@ -1938,9 +1938,12 @@ a.animated-button.victoria-one:after {
 }
 
 /* Add/remove btn */
-#add-button{
+#add-button, #remove-button{
 	background-color: transparent !important;
 	border: 1px solid #ccc;
+}
+#add-button i, #remove-button i  {
+	color:#333;
 }
 /****Media Queries****/
 
