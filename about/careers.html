@@ -156,13 +156,21 @@
 					<h3>Education Information</h3>
 					<form class="edu-form">
 						<div class="form-group">
-							<label for="username">Higher Qualification <span class="required_lab">*</span></label> 
-							<input type="text" class="form-control required" id="email" name="email" placeholder="Higher Qualification" required> 
+							<label for="qualification">Higher Qualification <span class="required_lab">*</span></label> 
+							<input type="text" class="form-control required" id="qualification" name="qualification" placeholder="Higher Qualification" required> 
 						</div>
-						<div class="form-group">
+						<div id="dynamic-field-1" class="form-group dynamic-field">
+							<label for="Courses">Additional Courses <span class="required_lab">*</span></label> 
+								<input type="text" id="Courses" class="form-control add-course required" name="Courses[]" placeholder="Additional Courses" required> 
+						</div>
+						 <div class="clearfix mt-4">
+							  <button type="button" id="add-button" class="btn btn-secondary float-left text-uppercase shadow-sm"><i class="fas fa-plus fa-fw"></i></button>
+							  <button type="button" id="remove-button" class="btn btn-secondary float-left text-uppercase ml-1" disabled="disabled"><i class="fas fa-minus fa-fw"></i></button>	
+						</div>
+						<!-- <div class="form-group">
 							<label for="username">Additional Courses <span class="required_lab">*</span></label> 
 							<input type="text" class="form-control required" id="email" name="email" placeholder="Additional Courses" required> 
-						</div>
+						</div> -->
 					</form>
 				</div>
 				<div class="career-submit">
@@ -252,7 +260,76 @@
 
 </script>
 
+<!-- add/remove textbox 7.9.2020 -->
+<script>
+$(document).ready(function() {
+  var buttonAdd = $("#add-button");
+  var buttonRemove = $("#remove-button");
+  var className = ".dynamic-field";
+  var count = 0;
+  var field = "";
+  var maxFields = 5;
 
+  function totalFields() {
+    return $(className).length;
+  }
+
+  function addNewField() {
+    count = totalFields() + 1;
+    field = $("#dynamic-field-1").clone();
+    field.attr("id", "dynamic-field-" + count);
+    field.children("label").text("Field " + count);
+    field.find("input").val("");
+    $(className + ":last").after($(field));
+  }
+
+  function removeLastField() {
+    if (totalFields() > 1) {
+      $(className + ":last").remove();
+    }
+  }
+
+  function enableButtonRemove() {
+    if (totalFields() === 2) {
+      buttonRemove.removeAttr("disabled");
+      buttonRemove.addClass("shadow-sm");
+    }
+  }
+
+  function disableButtonRemove() {
+    if (totalFields() === 1) {
+      buttonRemove.attr("disabled", "disabled");
+      buttonRemove.removeClass("shadow-sm");
+    }
+  }
+
+  function disableButtonAdd() {
+    if (totalFields() === maxFields) {
+      buttonAdd.attr("disabled", "disabled");
+      buttonAdd.removeClass("shadow-sm");
+    }
+  }
+
+  function enableButtonAdd() {
+    if (totalFields() === (maxFields - 1)) {
+      buttonAdd.removeAttr("disabled");
+      buttonAdd.addClass("shadow-sm");
+    }
+  }
+
+  buttonAdd.click(function() {
+    addNewField();
+    enableButtonRemove();
+    disableButtonAdd();
+  });
+
+  buttonRemove.click(function() {
+    removeLastField();
+    disableButtonRemove();
+    enableButtonAdd();
+  });
+});
+</script>
 <script>
 var currentTab = 0; // Current tab is set to be the first tab (0)
 

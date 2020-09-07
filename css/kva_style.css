@@ -1937,7 +1937,11 @@ a.animated-button.victoria-one:after {
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
 
-
+/* Add/remove btn */
+#add-button{
+	background-color: transparent !important;
+	border: 1px solid #ccc;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
