@@ -274,11 +274,35 @@ else{
  }
 
   //... and fix the Previous/Next buttons:
+  
+  
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
-  } else {
+  }  
+  else {
     document.getElementById("prevBtn").style.display = "inline";
   }
+  
+  if(workselection=="experienced")
+  {
+	if (n == 4) {
+		document.getElementById("nextBtn").style.display = "none";
+	}
+   if (n <= 3) {
+		document.getElementById("nextBtn").style.display = "block";
+	}
+  }
+  
+  if(workselection=="fresher")
+  {
+	if (n == 3) {
+		document.getElementById("nextBtn").style.display = "none";
+	}
+	if (n <= 2) {
+		document.getElementById("nextBtn").style.display = "block";
+	}
+  }
+  
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
@@ -293,14 +317,30 @@ function prevTab(n) {
   // This function will display the specified tab of the form...
 var x = document.getElementsByClassName("tab");
  x[n].style.display = "block";
- 
+
   //... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
-  } else {
+  } 
+  else {
     document.getElementById("prevBtn").style.display = "inline";
   }
+  
+  var workselection=$("#work-career").val();
+  if(workselection=="fresher")
+  {
+	if (n == 3) {
+		document.getElementById("nextBtn").style.display = "none";
+	}
+	if (n <= 2) {
+		<!-- document.getElementById("nextBtn").style.display = "block"; -->
+		document.getElementById("nextBtn").style.display = "inline";
+		document.getElementById("nextBtn").style.float = "right";
+	}
+  }
+  
   if (n == (x.length - 1)) {
+  
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
