@@ -306,8 +306,8 @@
 
 /* Partners */
 #places-map .marker-1 {
-  left: 60%;
-  top: 51%;
+  left: 59.5%;
+  top: 52%;
   -webkit-animation-delay: .6s;
   animation-delay: .6s;
 }
@@ -318,20 +318,20 @@
   animation-delay: .6s;
 }
 #places-map .marker-3 {
-  left: 55%;
-  top: 58%;
+  left: 57.3%;
+  top: 58.3%;
   -webkit-animation-delay: .6s;
   animation-delay: .6s;
 }
 #places-map .marker-4 {
   left: 58%;
-  top: 64%;
+  top: 65%;
   -webkit-animation-delay: .6s;
   animation-delay: .6s;
 }
 #places-map .marker-5 {
-  left: 47.5%;
-  top: 54%;
+  left: 46.5%;
+  top: 53%;
   -webkit-animation-delay: .6s;
   animation-delay: .6s;
 }
@@ -503,7 +503,7 @@
     top: 18px;
   }
   /*Partners*/
-  #map-info.kenya{
+  #map-info.Ethopia{
 	  top:42%;
 	  left:65%;
   }
@@ -511,9 +511,9 @@
 	  top:44%;
 	  left:63%;
   }
-  #map-info.Ethopia{
+  #map-info.kenya{
 	  top:49%;
-	  left:59%;
+	  left:61%;
   }
   #map-info.Tanzania{
 	  top:55%;
@@ -521,7 +521,7 @@
   }
   #map-info.nigeria{
 	  top:46%;
-	  left:52%;
+	  left:51%;
   }
   #map-info.manila {
     left: auto;
