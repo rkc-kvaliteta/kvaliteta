@@ -128,9 +128,31 @@ westernUnionResize( jQuery, window );
 (function($,window) {
 	var $body = $('body');
 	$(document).ready(function(){
-		mapInfoInit();
+		//mapInfoInit();
+		$('.map-location-marker')
+			.click(function(e){
+				e.preventDefault();
+				$('#map-info, #overlay').remove();
+				buildmapInfo(
+					$(this).data('mapLink'),
+					$(this).data('mapTitle'),
+					$(this).data('mapImage'),
+					$(this).data('jobListings')
+				);
+			});
+			$('.map-location-marker1')
+			.click(function(e){
+				e.preventDefault();
+				$('#map-info, #overlay').remove();
+				buildmapInfo(
+					$(this).data('mapLink'),
+					$(this).data('mapTitle'),
+					$(this).data('mapImage'),
+					$(this).data('jobListings')
+				);
+			});
 	});
-
+//*
 	function mapInfoInit() {
 		$('.map-location-marker')
 			.click(function(e){
@@ -155,6 +177,7 @@ westernUnionResize( jQuery, window );
 				);
 			});
 	}
+	//*
 
 	function buildmapInfo ( location, title, src, link )
 	{
