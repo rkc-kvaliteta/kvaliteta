@@ -1,0 +1,73 @@
+<head>
+	<title>CID</title>
+</head>
+
+<section id="cid" class="top-space">
+	<div class="navbar-lower navbar-static-top kite-bread" >
+		<ul class="breadcrumb">
+		 <li><a href="#home">HOME</a></li>
+		  <li><a href="#sdaas/intro">SDAAS</a></li>
+		  <li><a href="#sdaas/cid">CiD</a></li>
+		</ul>
+	</div>
+		<!-- <h2 class="text-center">CiD FRAMEWORK</h2> -->
+	<div class="content-top">
+		<div class="row">
+			
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<div class="tab-content">
+					<div class="model" id="DotNet">
+						<h3 class="mtop-0"> .Net</h3>
+						<p>The .NET framework is a software development framework from Microsoft. It provides a controlled programming environment where software can be developed, installed and executed on Windows-based operating systems.</p>
+						<p>The principal design features are:</p>
+						<ul class="data-ul">
+							<li>Interoperability: This allows for .NET-developed programs to access functionalities in programs developed outside .NET.</li>
+							<li>Common Runtime Engine: Also known as the common language runtime, this allows programs developed in .NET to exhibit common behaviors in memory usage, exception handling and security.</li>
+							<li>Language Independence: Common language infrastructure specifications (CLI) allow for the exchange of data types between two programs developed in different languages.</li>
+							<li>Base Class Library: A library of code for most common functions--used by programmers to avoid repetitive rewriting of code.</li>
+							<li>Ease of Deployment: There are tools to ensure the ease of installing programs without interfering with previously installed applications.</li>
+							<li>Security: Programs developed in .NET are based on a common security model.</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="cid-img">
+					<img src="img/CiD/dot net.jpg" alt="DotNet" />
+				</div>
+				<div class="Reset-btn">
+					<a href="#sdaas/cid" class="btn btn-sm animated-button victoria-one"> Back to CiD</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$('map').imageMapResize();
+</script>
+<script>
+	//used for highlighting parts of map
+	$('.map-image').maphilight({ stroke: false });
+	$('area').click(function (e) {
+		e.preventDefault();
+		 // remember clicked area
+		var clickedArea = $(this);
+		// foreach area keep hover selected or or remove from other
+		$('area').each(function () {
+			Data = $(this).data('maphilight') || {};
+			Data.alwaysOn = $(this).is(clickedArea); // modify
+			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
+		});
+
+	});
+	
+</script>
+<script>
+	// navbar 21.4.2020
+	
+	$('.navbar-lower').affix({
+		offset: {top: 50}
+	});
+</script>
