@@ -134,7 +134,6 @@ westernUnionResize( jQuery, window );
 	function mapInfoInit() {
 		$('.map-location-marker')
 			.click(function(e){
-				debugger;
 				e.preventDefault();
 				$('#map-info, #overlay').remove();
 				buildmapInfo(
