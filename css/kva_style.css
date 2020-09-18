@@ -1496,9 +1496,9 @@ footer{
 section.top-space {
 	padding-bottom:15%;
 }
-/* #myMap{
-  display:none;
-} */
+#myMap{
+  display:block !important;
+} 
 
 .scroll-box{
 width:100% !important;
