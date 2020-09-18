@@ -1796,7 +1796,7 @@ section.modalWindow section.modalWrapper {
 	min-height:446px;
 	position:relative;
 }
-#intro h4, #CiD-Area h4, #techAreas h4{
+#intro h4, #CiD-Area h4, #techAreas h4, #kite-portalapps h4{
 	position:absolute;                  
 	bottom:0;                          
 	left:0; 
