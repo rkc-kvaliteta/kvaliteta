@@ -1497,7 +1497,7 @@ section.top-space {
 	padding-bottom:15%;
 }
 #myMap{
-  display:none;
+  display:block !important;
 } 
 
 .scroll-box{
