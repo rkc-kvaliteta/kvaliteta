@@ -1496,9 +1496,6 @@ footer{
 section.top-space {
 	padding-bottom:15%;
 }
-#myMap{
-  display:block !important;
-} 
 
 .scroll-box{
 width:100% !important;
@@ -1908,6 +1905,10 @@ a.animated-button.victoria-one:after {
 #add-button i, #remove-button i  {
 	color:#333;
 }
+/* 18.9.2020 */
+#myMap{
+  display:block !important;
+} 
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
