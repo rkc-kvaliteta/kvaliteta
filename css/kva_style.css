@@ -140,7 +140,7 @@ border-radius:0;
 
 /*************  CANVAS *************/
 canvas {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -164,7 +164,7 @@ svg a:hover path {
 
 /*************  CANVAS *************/
 canvas {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 svg{
