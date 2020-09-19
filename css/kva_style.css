@@ -1808,7 +1808,9 @@ button {
   font-size: 17px;
   cursor: pointer;
 }
-
+button#prevBtn, button#nextBtn{
+	color:#fff !important;
+}
 button:hover {
   opacity: 0.8;
 }
