@@ -1890,6 +1890,9 @@ a.animated-button.victoria-one:after {
 .thankyou_message{
 	margin-top:35px;
 }
+#fresher, #experienced, .tab2{
+	display:none;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
