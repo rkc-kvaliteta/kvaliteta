@@ -9,189 +9,115 @@
 	</div>
 	<!-- <h2 class="text-center">CAREERS</h2> -->
 	<div class="content-top">
-		<div class="row">
-			
-			<div class="col-sm-4 col-md-4">
-				<!--3.9.2020-->
-				<div class="personal-career">
-					<h3>Personal Information</h3>
-					<form id="personal-form" method="POST" onsubmit="return submitUserForm();">
-						<div class="tab">
+		<form id="personal-form" class="gform pure-form pure-form-stacked" data-email="jsaranya701@gmail.com" action="https://script.google.com/macros/s/AKfycbx1OM_7rczx1ebb4apVekjPAJ36084ldZjHOdl3/exec">
+				 <div class="row">
+					<div class="col-sm-4 col-md-4"> 
+						<div class="personal-career">
+							<h3>Personal Information</h3>						
 							<div class="form-group">
 								<label for="username">Full Name <span class="required_lab">*</span></label> 
-								<input type="text" class="form-control required1" id="name" name="name" placeholder="Full Name" required> 
+								<input type="text" class="form-control required1" id="Name" name="Name" placeholder="Full Name" required> 
 							</div>
 							<div class="form-group">
 								<label for="username">Current Address <span class="required_lab">*</span></label> 
 								<!-- <input type="text" class="form-control required1" id="address" name="address" placeholder="current address" required>  -->
-								<textarea class="form-control required1" id="address" name="address" placeholder="Address" rows="4" required></textarea>
+								<textarea class="form-control required1" id="Address" name="Address" placeholder="Address" rows="4" required></textarea>
 							</div>
-						</div>
-						<div class="tab">
+						
 							<div class="form-group">
 								<label for="username">Email <span class="required_lab">*</span></label> 
-								<input type="email" class="form-control required1" oninput="this.className = ''" id="email" name="email" placeholder="Email" required> 
+								<input type="email" class="form-control required1" id="Personal-Email" name="Personal-Email" placeholder="Email" required> 
 							</div>
 							<div class="form-group">
 								<label for="contactno">Contact No<span class="required_lab">*</span></label>
-								<input type="text" class="form-control required1" oninput="this.className = ''" id="ph-no" name="ph-no" placeholder="Contact No." required>
-							</div>
-						</div>
-						<div class="tab">
+								<input type="text" class="form-control required1" id="ph-no" name="ph-no" placeholder="Contact No." required>
+							</div>										
+						</div>					
+					</div> 					
+					<div class="col-sm-4 col-md-4">		
+						 <div class="contact-career" id="con-form"> 						
 							<div class="form-group">
 								<label for="contactno">Applying Position<span class="required_lab">*</span></label>
-								<input type="text" class="form-control required1" oninput="this.className = ''" id="position" name="position" placeholder="Applying Position" required>
+								<input type="text" class="form-control required1" id="position" name="position" placeholder="Applying Position" required>
 							</div>
 							<div class="form-group">
 								<label for="contactno">Working Experience<span class="required_lab">*</span></label>
-								<!-- <input type="number" class="form-control required" id="exp" name="exp" placeholder="working exp" required> -->
-								<select class="form-control required1" id="work-career">
+								<select class="form-control required1" id="work-career" name="work-career">
 									<option>-- Select --</option>
 									<option value="fresher">Fresher</option>
 									<option value="experienced">Experienced</option>
 								</select>
-							</div>
-						</div>
-				
-						<div class="prev-company emp-form" id="experienced">					
-							<div class="tab">
-								<div class="form-group">
-								<h3>Previous Current Employee Detaills</h3>
-									<label for="username">Company Name <span class="required_lab">*</span></label> 
-									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-company" name="name" placeholder="Company Name" required> 
+							</div>						
+							<div class="prev-company emp-form" id="experienced">	
+								<div class="tab1">
+									<div class="form-group">
+									<h3>Previous Current Employee Detaills</h3>
+										<label for="username">Company Name <span class="required_lab">*</span></label> 
+										<input type="text" class="form-control required1" id="Exp-company" name="Exp-company" placeholder="Company Name" required> 
+									</div>
+									<div class="form-group">
+										<label for="username">Role <span class="required_lab">*</span></label> 
+										<input type="text" class="form-control required1" id="Exp-roll" name="Exp-roll" placeholder="Roll" required> 
+									</div>									
+								</div>								
+								<div class="tab2">
+									<div class="form-group">
+										<label for="username">Duration <span class="required_lab">*</span></label> 
+										<input type="text" class="form-control required1" id="Exp-duration" name="Exp-duration" placeholder="Duration" required> 
+									</div>
+									<div class="form-group">
+										<label for="username">Reference <span class="required_lab">*</span></label> 
+										<input type="text" class="form-control required1" id="Exp-ref" name="Exp-ref" placeholder="Reference" required> 
+									</div>							
+									<div class="form-group">
+										<label for="contactno">Resume <span class="required_lab">*</span></label>
+										<input type="file" class="form-control required1" id="Exp-Resume" name="Exp-Resume" placeholder="Resume" required>
+									</div>									
 								</div>
-								<div class="form-group">
-									<label for="username">Role <span class="required_lab">*</span></label> 
-									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-roll" name="name" placeholder="Roll" required> 
-								</div>
-							</div>
-							<div class="tab">
-								<div class="form-group">
-									<label for="username">Duration <span class="required_lab">*</span></label> 
-									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-duration" name="name" placeholder="Duration" required> 
-								</div>
-								<div class="form-group">
-									<label for="username">Reference <span class="required_lab">*</span></label> 
-									<input type="text" class="form-control required1" oninput="this.className = ''" id="exp-ref" name="name" placeholder="Reference" required> 
-								</div>							
-								<div class="form-group">
-									<label for="contactno">Resume <span class="required_lab">*</span></label>
-									<input type="file" class="form-control required1" oninput="this.className = ''" id="exp-resume" name="resume" placeholder="Resume" required>
-								</div>
-							</div>
-						</div>
-						
-						<div class="fresher emp-form" id="fresher">
-							<div class="tab">
+								<button type="button" id="nextBtn" class="btn btn-default button-success">Next</button>
+								<button type="button" id="prevBtn" class="btn btn-default button-success">Previous</button>
+							</div>						
+							<div class="form-fresher emp-form" id="fresher">								
 								<div class="form-group">
 									<h3>Fresher</h3>
 									<label for="username">Role <span class="required_lab">*</span></label> 
-									<input type="text" class="form-control required1" oninput="this.className = ''" id="fresher-name" name="name" placeholder="Roll" required> 
+									<input type="text" class="form-control required1" id="Fresher-Role" name="Fresher-Role" placeholder="Roll" required> 
 								</div>
 								<div class="form-group">
 									<label for="contactno">Resume <span class="required_lab">*</span></label>
-									<input type="file" class="form-control required1" oninput="this.className = ''" id="fresher-resume" name="resume" placeholder="Resume" required>
-								</div>
+									<input type="file" class="form-control required1" id="Fresher-Resume" name="Fresher-Resume" placeholder="Resume" required>
+								</div>	
+							</div>													
+						 </div> 						
+					</div>
+					<div class="col-sm-4 col-md-4">		
+						 <div class="edu-career" id="edu-form">
+							<h3>Education Information</h3>
+							<div class="form-group">
+								<label for="qualification">Higher Qualification <span class="required_lab">*</span></label> 
+								<input type="text" class="form-control required" id="Qualification" name="Qualification" placeholder="Higher Qualification" required> 
+							</div>
+							<div id="dynamic-field-1" class="form-group dynamic-field">
+								<label for="Courses">Additional Courses <span class="required_lab">*</span></label> 
+								<input type="text" id="Courses" class="form-control add-course required" name="Courses" placeholder="Additional Courses" required> 
+							</div>
+							 <div class="clearfix mt-4">
+								  <button type="button" id="add-button" class="btn btn-secondary float-left text-uppercase shadow-sm"><i class="fas fa-plus fa-fw"></i></button>
+								  <button type="button" id="remove-button" class="btn btn-secondary float-left text-uppercase ml-1" disabled="disabled"><i class="fas fa-minus fa-fw"></i></button>	
 							</div>
 						</div>
-						<div style="overflow:auto;">
-							<div style="float:right;">
-							  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-							  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-							</div>
-						 </div>
-						  <!-- Circles which indicates the steps of the form: -->
-						 <div style="text-align:center;margin-top:40px;">
-							<span class="step"></span>
-							<span class="step"></span>
-							<span class="step"></span>
-							<span class="step"></span>
-							<span class="step"></span>
-						 </div>
-						<!-- <button type="submit" id="check" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
-							Submit
-						</button>  -->
-					</form>			
-				</div>
-				
-				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:rebeccapurple">
-					<div class="panel-heading no-border">
-						<i class="far fa-building fa-5x"></i>
-						<h3>WHY KVALITETA</h3>
-					</div>
-					<div class="panel-body">
-					Kvaliteta is an equal opportunities employer. We do not discriminate on any grounds. We value the diversity of the markets in which we operate.
-					</div>
-					</div> -->
-			</div>
-			<div class="col-sm-4 col-md-4">
-				<!--3.9.2020-->
-				<div class="contact-career" id="con-form">
-					<h3>Contact Information</h3>
-					<form method="post" class="con-form" onsubmit="return submitUserForm();">
-						<div class="form-group">
-							<label for="username">Email <span class="required_lab">*</span></label> 
-							<input type="email" class="form-control required" id="email" name="email" placeholder="Email" required> 
+						<div class="career-submit">
+							<button type="submit" id="check" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
+								Submit
+							</button>
+						</div>	
+						<div class="thankyou_message" style="display:none;">
+						  <h2><em>Thanks</em> for contacting us!<br />
+							We will get back to you soon!</h2>
 						</div>
-						<div class="form-group">
-							<label for="contactno">Contact No<span class="required_lab">*</span></label>
-							<input type="text" class="form-control required" id="ph-no" name="ph-no" placeholder="Contact No." required>
-						</div>
-					</form>
-				</div>
-			
-				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:salmon;">
-					<div class="panel-heading no-border">
-						<i class="fa fa-life-ring fa-5x"></i>
-						<h3 style="color:salmon">LIFE @ KVALITETA</h3>
 					</div>
-					<div class="panel-body">
-					Working at Kvaliteta means being part of an experienced and a dynamic team that passionately believes in being flexible, working hard and having fun.
-					</div>
-				</div> -->
-			</div>
-			<div class="col-sm-4 col-md-4">
-				<!--3.9.2020-->
-				<div class="edu-career" id="edu-form">
-					<h3>Education Information</h3>
-					<form class="edu-form">
-						<div class="form-group">
-							<label for="qualification">Higher Qualification <span class="required_lab">*</span></label> 
-							<input type="text" class="form-control required" id="qualification" name="qualification" placeholder="Higher Qualification" required> 
-						</div>
-						<div id="dynamic-field-1" class="form-group dynamic-field">
-							<label for="Courses">Additional Courses <span class="required_lab">*</span></label> 
-								<input type="text" id="Courses" class="form-control add-course required" name="Courses[]" placeholder="Additional Courses" required> 
-						</div>
-						 <div class="clearfix mt-4">
-							  <button type="button" id="add-button" class="btn btn-secondary float-left text-uppercase shadow-sm"><i class="fas fa-plus fa-fw"></i></button>
-							  <button type="button" id="remove-button" class="btn btn-secondary float-left text-uppercase ml-1" disabled="disabled"><i class="fas fa-minus fa-fw"></i></button>	
-						</div>
-						<!-- <div class="form-group">
-							<label for="username">Additional Courses <span class="required_lab">*</span></label> 
-							<input type="text" class="form-control required" id="email" name="email" placeholder="Additional Courses" required> 
-						</div> -->
-					</form>
-				</div>
-				<div class="career-submit">
-					<button type="submit" id="check" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
-						Submit
-					</button>
-				</div>
-				<!-- <div class="panel panel-default panel-hover text-center no-border-radius" style="color:mediumaquamarine">
-					<div class="panel-heading no-border">
-						<i class="fa fa-fire fa-5x"></i>
-						<h3 style="color:mediumaquamarine">APPLY</h3>
-					</div>
-					<div class="panel-body">
-					We believe in welcoming the best talent available.
-					<a href="MAILTO:hr@kvaliteta.in">hr@kvaliteta.in</a>
-					<br>
-					<br>
-					</div>
-				</div> -->
-			</div>
-			</div>
+				</div> 
+			</form>
 		</div>
 	</section>
 <script>
@@ -200,6 +126,28 @@
 	$('.navbar-lower').affix({
   offset: {top: 50}
 });
+</script>
+<script>
+       $(function() {
+        // Then hide the second div
+           $(".tab2").hide();
+           $("#prevBtn").hide();
+
+        // Then add a click handlers to the buttons
+           $("#nextBtn").click(function () {
+               $(".tab2").show();
+               $(".tab1").hide();
+               $("#prevBtn").show();
+               $("#nextBtn").hide();
+        });
+        $("#prevBtn").click(function () {
+            $(".tab2").hide();
+            $(".tab1").show();
+            $("#nextBtn").show();
+            $("#prevBtn").hide();
+        });
+    })
+
 </script>
 <script>
    $(function() {

@@ -78,7 +78,7 @@ blockquote.pull-right {
 {
     border:2px solid #0e600e !important;
     background-color: #0e600e;
-    color: #fff;
+    color: #fff !important;
 
 }
 .btn-default:hover
@@ -1808,35 +1808,11 @@ button {
   font-size: 17px;
   cursor: pointer;
 }
-button#prevBtn, button#nextBtn{
+/* button#prevBtn, button#nextBtn{
 	color:#fff !important;
-}
+} */
 button:hover {
   opacity: 0.8;
-}
-
-#prevBtn {
-  background-color: #bbbbbb;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;  
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-.step.active {
-  opacity: 1;
-}
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #0e600e;
 }
 
 /* 7.9.2020 map-label */
@@ -1911,6 +1887,9 @@ a.animated-button.victoria-one:after {
 #myMap{
   display:block !important;
 } 
+.thankyou_message{
+	margin-top:35px;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
