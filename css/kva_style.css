@@ -1898,6 +1898,10 @@ a.animated-button.victoria-one:after {
 	background-color: #fff !important;
 	color:#0e600e !important;
 }
+.ff-form .ff-button-bar button:hover{
+	background-color: #0e600e !important;
+	color:#fff !important;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
