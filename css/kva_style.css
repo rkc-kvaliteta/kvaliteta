@@ -1890,6 +1890,17 @@ a.animated-button.victoria-one:after {
 	background-color: #0e600e !important;
 	color:#fff !important;
 }
+/*2.11.2020*/
+ul.tree {
+	 margin: 0;
+	 padding: 2px 20px;
+}
+#telecom ul.tree li {
+	 list-style: none;
+	 margin-left: -15px;
+	 position: relative;
+}
+
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
