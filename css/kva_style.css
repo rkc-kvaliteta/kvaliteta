@@ -548,7 +548,8 @@ div.affix-bottom{
 }
 .carousel-caption {
     text-shadow: none;
-    font-size: 1.5em; 
+    /* font-size: 1.5em;  */
+	 font-size: 28px;
 	font-weight:500;
 	text-align:justify !important;	
 }
@@ -561,7 +562,7 @@ div.affix-bottom{
 }
 .carousel-caption.middle{
   padding-bottom:9%;
-  left:16% !important;
+  left:12% !important;
   font-weight:bold;
 }
 .carousel-caption.intro{
@@ -1893,7 +1894,7 @@ a.animated-button.victoria-one:after {
 /*2.11.2020*/
 ul.tree {
 	 margin: 0;
-	 padding: 2px 20px;
+	 padding: 2px 15px;
 }
 #telecom ul.tree li {
 	 list-style: none;
