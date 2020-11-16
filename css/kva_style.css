@@ -683,7 +683,10 @@ div.affix-bottom{
     width: 100px;
     z-index: 9999;
 }
-
+/* 16.11.2020 */
+#slider .intro-icon{
+	margin-left: -35px !important;
+}
 /************* 4.2 -  Landing *************/
 .landing
 {
