@@ -659,8 +659,11 @@ div.affix-bottom{
 	right: inherit;
     color:#000;
 	bottom:-95px;
+	background-color:#ccc;
 }
-
+#caption-3{
+	width:100%;
+}
 #slider .carousel-caption:not(#caption-0) {
     display: none;
 }
