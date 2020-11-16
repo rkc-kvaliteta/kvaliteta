@@ -642,7 +642,8 @@ div.affix-bottom{
 }
 /***29.8.200***/
 .padd-lt0{
-    height: 625px !important;
+    /* height: 625px !important; */
+	height: 400px !important;
 	padding:0 !important;
 }
 .slider-container {
@@ -654,7 +655,7 @@ div.affix-bottom{
 	position: absolute;
 	top: 0;
 	text-align: left;
-	left: inherit;
+	left: 0;
 	right: inherit;
     color:#000;
 	bottom:-95px;
