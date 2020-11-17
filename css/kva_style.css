@@ -1273,6 +1273,9 @@ footer{
     padding-bottom: 15%;
     font-size: 2em;
 }
+#slider .carousel-indicators{
+	bottom:120px !important;
+}
 .carousel-indicators {
 	bottom:-10px;
 }
