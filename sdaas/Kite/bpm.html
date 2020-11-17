@@ -52,7 +52,7 @@
 		var clickedArea = $(this);
 		// foreach area keep hover selected or or remove from other
 		$('area').each(function () {
-			Data = $(this).data('maphilight') || {};
+			Data = $(this).data('maphilight') || {}; 
 			Data.alwaysOn = $(this).is(clickedArea); // modify
 			$(this).data('maphilight', Data).trigger('alwaysOn.maphilight'); // set
 		});
