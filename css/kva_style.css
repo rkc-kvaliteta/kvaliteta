@@ -641,11 +641,11 @@ div.affix-bottom{
 	color:#000;
 }
 /***29.8.200***/
-.padd-lt0{
-    /* height: 625px !important; */
+/* .padd-lt0{
+    /* height: 625px !important; *
 	height: 400px !important;
 	padding:0 !important;
-}
+} */
 .slider-container {
 	margin-top:35px;
 	height:100%;
@@ -1273,9 +1273,7 @@ footer{
     padding-bottom: 15%;
     font-size: 2em;
 }
-#slider .carousel-indicators{
-	bottom:120px !important;
-}
+
 .carousel-indicators {
 	bottom:-10px;
 }
