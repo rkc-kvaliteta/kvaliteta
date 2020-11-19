@@ -1747,11 +1747,11 @@ section.modalWindow section.modalWrapper {
 	box-shadow: 2px 2px 10px 2px #0e600e;
 }
 /*28.8.2020*/
-#intro, #CiD-Area, #techAreas, #kite-portalapps{
+#CiD-Area, #techAreas, #kite-portalapps{
 	min-height:446px;
 	position:relative;
 }
-#intro h4, #CiD-Area h4, #techAreas h4, #kite-portalapps h4{
+#CiD-Area h4, #techAreas h4, #kite-portalapps h4{
 	position:absolute;                  
 	bottom:0;                          
 	left:0; 
