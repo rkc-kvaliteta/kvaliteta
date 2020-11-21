@@ -546,6 +546,9 @@ div.affix-bottom{
 	height:446px;
 	width:100%;
 }
+#Mcare .carousel-control.left, #Mcare .carousel-control.right{
+	background-image:none !important;
+}
 /**/
 .carousel{
 	/*margin-top:20px;*/
@@ -1758,11 +1761,11 @@ section.modalWindow section.modalWrapper {
 	box-shadow: 2px 2px 10px 2px #0e600e;
 }
 /*28.8.2020*/
-#CiD-Area, #techAreas, #kite-portalapps{
+#techAreas, #kite-portalapps{
 	min-height:446px;
 	position:relative;
 }
-#CiD-Area h4, #techAreas h4, #kite-portalapps h4{
+#techAreas h4, #kite-portalapps h4{
 	position:absolute;                  
 	bottom:0;                          
 	left:0; 
