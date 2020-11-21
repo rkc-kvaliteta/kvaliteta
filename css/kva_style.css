@@ -529,7 +529,7 @@ div.affix-bottom{
 	height:auto;
 }
 .carousel-inner.Ent-car > .item > img, .carousel-inner.sdaas-car > .item > img, .carousel-inner.about > .item > img, 
-.carousel-inner.isms > .item > img, .carousel-inner.mcare > .item > img{
+.carousel-inner.isms > .item > img, .carousel-inner.mcare > .item > img, .carousel-inner.RMS > .item > img{
 	height:auto;
 	width:100%;
 }
@@ -538,15 +538,16 @@ div.affix-bottom{
     height: 100%;
 }
 /* 21.11.2020	 */
-.carousel-inner.isms, .carousel-inner.mcare{
+.carousel-inner.isms, .carousel-inner.mcare, .carousel-inner.RMS{
 	height:446px;
 }
 
-.carousel-inner.isms > .item > img, .carousel-inner.mcare > .item > img{
+.carousel-inner.isms > .item > img, .carousel-inner.mcare > .item > img, .carousel-inner.RMS > .item > img{
 	height:446px;
 	width:100%;
 }
-#Mcare .carousel-control.left, #Mcare .carousel-control.right, #isms .carousel-control.left, #isms .carousel-control.right{
+#Mcare .carousel-control.left, #Mcare .carousel-control.right, #isms .carousel-control.left, #isms .carousel-control.right,
+#RMS .carousel-control.left, #RMS .carousel-control.right{
 	background-image:none !important;
 }
 /**/
@@ -1923,7 +1924,9 @@ ul.tree {
 	 margin-left: -15px;
 	 position: relative;
 }
-
+.Rms-link li a {
+	font-weight:bold;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
