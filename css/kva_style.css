@@ -549,6 +549,11 @@ div.affix-bottom{
 #Mcare .carousel-control.left, #Mcare .carousel-control.right, #isms .carousel-control.left, #isms .carousel-control.right,
 #RMS .carousel-control.left, #RMS .carousel-control.right{
 	background-image:none !important;
+	color:#333 !important;
+}
+.carousel-indicators.right-kite li{
+	background-color:#333 !important;
+	border:1px solid #333 !important;
 }
 /**/
 .carousel{
