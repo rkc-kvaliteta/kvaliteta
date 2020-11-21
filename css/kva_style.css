@@ -546,7 +546,7 @@ div.affix-bottom{
 	height:446px;
 	width:100%;
 }
-#Mcare .carousel-control.left, #Mcare .carousel-control.right{
+#Mcare .carousel-control.left, #Mcare .carousel-control.right, #isms .carousel-control.left, #isms .carousel-control.right{
 	background-image:none !important;
 }
 /**/
@@ -1774,7 +1774,7 @@ section.modalWindow section.modalWrapper {
 .fresher, .prev-company{
 	display:none;
 }
-.kite-img img, .cid-img img{
+.kite-img img, .cid-img img, .CiDcontent-img img{
 	width:100%;
 	height:100%;
 	margin-top:10px;
