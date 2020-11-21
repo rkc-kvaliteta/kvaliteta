@@ -525,16 +525,26 @@ div.affix-bottom{
 	top:0;
     left:0;
 }
-.carousel-inner.Ent-car, .carousel-inner.sdaas-car, .carousel-inner.about{
+.carousel-inner.Ent-car, .carousel-inner.sdaas-car, .carousel-inner.about, .carousel-inner.isms, .carousel-inner.mcare{
 	height:auto;
 }
-.carousel-inner.Ent-car > .item > img, .carousel-inner.sdaas-car > .item > img, .carousel-inner.about > .item > img{
+.carousel-inner.Ent-car > .item > img, .carousel-inner.sdaas-car > .item > img, .carousel-inner.about > .item > img, 
+.carousel-inner.isms > .item > img, .carousel-inner.mcare > .item > img{
 	height:auto;
 	width:100%;
 }
 .sdaas-over{
 	width: 100%;
     height: 100%;
+}
+/* 21.11.2020	 */
+.carousel-inner.isms, .carousel-inner.mcare{
+	height:446px;
+}
+
+.carousel-inner.isms > .item > img, .carousel-inner.mcare > .item > img{
+	height:446px;
+	width:100%;
 }
 /**/
 .carousel{
@@ -1437,13 +1447,7 @@ body {
      visibility:hidden;
 }
 
-/* 21.11.2020	 */
-#Mcare .carousel-inner, #isms .carousel-inner{
-	height:446px;
-}
-#Mcare .carousel-inner > .item > img, #isms .carousel-inner > .item > img{
-	height:446px;
-}
+
 /********** 4.3 Mobile - Footer **********/
 footer{
 	position:absolute;
