@@ -1700,7 +1700,7 @@ blockquote p {
 .Sp-popup{
 	text-align:justify;
 }
-.ent-it h3{
+.ent-it h3, .ent-it p{
 	color:#333;
 }
 
