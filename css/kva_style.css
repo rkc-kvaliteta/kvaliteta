@@ -1570,7 +1570,9 @@ section.top-space{
   text-decoration: underline;
 }
 
-
+.carousel-control .glyphicon-chevron-left{
+	margin-left: -45px !important;
+}
 /*******/
 /*.bread-samp ul li{
 	background:#eee;
