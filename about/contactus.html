@@ -246,9 +246,9 @@
 						<textarea class="form-control required" rows="6" id="comment" name="comment" placeholder="comment" required></textarea>
 					</div>	
 					
-					<div class="g-recaptcha" data-sitekey="6LfN7sQZAAAAAGlu41OTYP8dbsbU_UPPh39-PBbX" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+					<!-- <div class="g-recaptcha" data-sitekey="6LfN7sQZAAAAAGlu41OTYP8dbsbU_UPPh39-PBbX" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div> -->
 					
-					<button type="submit" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
+					<button type="submit" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" onclick="sendEmail()" disabled>
 						<i class="fa fa-paper-plane"></i>&nbsp;Send
 					</button> 
 				</form>
@@ -326,7 +326,6 @@ var text;
 				setTimeout(function() {
 					$('#success-msg').fadeOut("slow");
 				}, 2000 );
-
 			}
     );
 }
