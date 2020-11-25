@@ -185,7 +185,7 @@
 					</div> -->
 				
 				<!--14.9.2020 -->
-				 <form method="POST" enctype="text/plain"  onsubmit="return submitUserForm();" action="mailto:saranya@kvaliteta.in?subject=Enquiry Request">
+				 <!-- <form method="POST" enctype="text/plain"  onsubmit="return submitUserForm();" action="mailto:saranya@kvaliteta.in?subject=Enquiry Request">
 
 					<div class="form-group">
 						<label for="username">Name <span class="required_lab">*</span></label> 
@@ -213,12 +213,45 @@
 
 				<div class="g-recaptcha" data-sitekey="6LfN7sQZAAAAAGlu41OTYP8dbsbU_UPPh39-PBbX" required></div>	
 				
-					<!-- <input type="button" value="Submit" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/> -->
+					<!-- <input type="button" value="Submit" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/> 
 					 <button type="submit" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
 						<i class="fa fa-paper-plane"></i>&nbsp;Send
 					</button> 
 					<div id="g-recaptcha-error"></div>
-			</form> 
+			</form>  -->
+			
+			<!-- 25.11.2020 -->
+				<form action="mailto:info@kvaliteta.in?subject=Enquiry Request" method="post" enctype="text/plain" onsubmit="return submitUserForm();">
+					<div class="form-group">
+						<label for="username">Name <span class="required_lab">*</span></label> 
+						<input type="text" class="form-control required" id="username" name="username" placeholder="Full Name" required> 
+					</div>
+					<div class="form-group">
+						<label for="usermail">Email <span class="required_lab">*</span></label>
+						<input type="email" class="form-control required" id="usermail" name="usermail" placeholder="E-mail" required>
+					</div>
+					<div class="form-group">
+						<label for="contactno">Contact No<span class="required_lab">*</span></label>
+						<input type="text" class="form-control required" id="contactno" name="contactno" placeholder="Contact No." required>
+					</div>
+					<div class="form-group">
+						<label for="query">Query</label>
+						<select class="form-control required" id="query" name="query">
+							 <option value="" selected  disabled>selected a option</option>
+							<option>Sales Related Query</option>
+							<option>General Information</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control required" rows="6" id="comment" name="comment" placeholder="comment" required></textarea>
+					</div>	
+					
+					<div class="g-recaptcha" data-sitekey="6LfN7sQZAAAAAGlu41OTYP8dbsbU_UPPh39-PBbX" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+					
+					<button type="submit" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
+						<i class="fa fa-paper-plane"></i>&nbsp;Send
+					</button> 
+				</form>
 				
 				<!-- <div class="contact-mail">
 					<i class="fa fa-address-book"></i>
