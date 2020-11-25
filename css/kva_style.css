@@ -708,6 +708,7 @@ div.affix-bottom{
     top: 100px;
     width: 100px;
     z-index: 9999;
+	background-image:none !important;
 }
 /* 16.11.2020 */
 #slider .intro-icon{
