@@ -1700,7 +1700,7 @@ blockquote {
 blockquote p {
   display: inline;
 }
-.Sp-popup{
+.Sp-popup, .src-cont p{
 	text-align:justify;
 }
 .ent-it h3, .ent-it p{
