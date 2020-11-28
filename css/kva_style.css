@@ -1660,11 +1660,11 @@ section.top-space{
 .enter-content h3{
 	font-weight:bold;
 }
-#Iaas, #Paas, #Cloud, #Oss{
+/* #Iaas, #Paas, #Cloud, #Oss{
 	padding:10px;
 	border:1px solid #0e600e;
 	box-shadow: 4px 0px 4px 0px #0e600e;
-}
+} */
 .br-color{
 	outline: 0;
 	border: none;
