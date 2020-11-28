@@ -1938,6 +1938,13 @@ ul.tree {
 .Rms-link li a {
 	font-weight:bold;
 }
+#Rms-clickable img{
+	width:100%;
+}
+#kite-rms ul li a{
+	font-weight: bold;
+	text-decoration: none;
+}
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
