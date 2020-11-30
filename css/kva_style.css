@@ -503,8 +503,8 @@ div.affix-bottom{
     background-size: cover;
     position: absolute;
     width: 100%;
-    /*height: 100%;*/
-	height:287.498px;
+    height: 100%;
+	/* height:287.498px; */
 	top:0;
     left:0;
 }
