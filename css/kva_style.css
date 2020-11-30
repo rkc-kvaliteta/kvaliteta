@@ -1945,6 +1945,13 @@ ul.tree {
 	font-weight: bold;
 	text-decoration: none;
 }
+/*30.11.2020 Contact-link */
+.con-link{
+	margin-right:20px;
+}
+.Green-tooltip + .tooltip > .tooltip-inner {background-color: #0e600e; padding:10px; font-weight:bold;}
+.Green-tooltip + .tooltip > .tooltip-arrow { border-left-color:#0e600e; }
+
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
