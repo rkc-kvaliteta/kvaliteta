@@ -509,9 +509,9 @@ div.affix-bottom{
     left:0;
 }
 /**/
-.carousel-inner{
+/* .carousel-inner{
 	height:287.498px;
-}
+} */
 .carousel-inner > .item > img{
 	height:287.498px;
 	width:100%;
@@ -525,7 +525,7 @@ div.affix-bottom{
 	top:0;
     left:0;
 }
-.carousel-inner.Ent-car, .carousel-inner.sdaas-car, .carousel-inner.about, .carousel-inner.isms, .carousel-inner.mcare{
+.carousel-inner.home-car-inner, .carousel-inner.Ent-car, .carousel-inner.sdaas-car, .carousel-inner.about, .carousel-inner.isms, .carousel-inner.mcare{
 	height:auto;
 }
 .carousel-inner.Ent-car > .item > img, .carousel-inner.sdaas-car > .item > img, .carousel-inner.about > .item > img, 
