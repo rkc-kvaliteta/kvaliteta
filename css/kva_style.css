@@ -1941,7 +1941,7 @@ ul.tree {
 #Rms-clickable img{
 	width:100%;
 }
-#kite-rms ul li a{
+#kite-rms ul li a, #kite-isms ul li a{
 	font-weight: bold;
 	text-decoration: none;
 }
