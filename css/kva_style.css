@@ -1945,6 +1945,10 @@ ul.tree {
 	font-weight: bold;
 	text-decoration: none;
 }
+#kite-rms ul li.active a{
+	color:#D8B446 !important;
+	/*font-weight:bold;*/
+}
 /*30.11.2020 Contact-link */
 .con-link{
 	margin-right:20px;
