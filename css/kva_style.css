@@ -1945,7 +1945,7 @@ ul.tree {
 	font-weight: bold;
 	text-decoration: none;
 }
-#kite-rms ul li.active a{
+#kite-rms ul li.active a, #kite-isms ul li.active a{
 	color:#D8B446 !important;
 	/*font-weight:bold;*/
 }
