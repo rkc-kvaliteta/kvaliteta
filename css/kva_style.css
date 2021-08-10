@@ -1988,7 +1988,7 @@ ul.tree {
 	#nav2 .navbar-brand .logo-part2{
 		padding:0px !important;
 	}  
-	#myCarousel {
+	#myCarousel, #slider {
 		display:none !important;
 	}
 	.modal-title{
@@ -2056,7 +2056,7 @@ ul.tree {
 	#nav2 .navbar-brand .logo-part2{
 		padding:0px !important;
 	}  
-	#myCarousel {
+	#myCarousel, #slider {
 		display:none !important;
 	}
 	.modal-title{
@@ -2125,7 +2125,7 @@ ul.tree {
 	#nav2 .menu{
 		margin-top:40px;
 	}
-	#myCarousel {
+	#myCarousel, #slider {
 		display:none !important;
 	}
 	.modal-title{
@@ -2172,7 +2172,7 @@ ul.tree {
 	#nav2 .menu{
 		margin-top:40px;
 	}
-	#myCarousel {
+	#myCarousel, #slider {
 		display:none !important;
 	}
 	.modal-title{
@@ -2207,7 +2207,7 @@ ul.tree {
 	#nav2 .menu{
 		margin-top:40px;
 	}
-	#myCarousel {
+	#myCarousel, #slider {
 		display:none !important;
 	}
 	
