@@ -1989,7 +1989,7 @@ ul.tree {
 }
 .cc_container .cc_btn, .cc_container .cc_btn:visited {
     color: #000;
-    background-color: #f1d600;
+    background-color: #D8B446;
     transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
     -webkit-transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
     border-radius: 5px;
