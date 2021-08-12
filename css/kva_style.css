@@ -481,13 +481,27 @@ div.affix-bottom{
     z-index: -1;
 }
 
-.kva-footer p{
+/* .kva-footer p{
     text-align:center;
 	margin-top: 5px;
     color: #fff; 
     font-size: 14px;
     word-spacing: 4px;
+} */
+ .kva-footer  span{
+    text-align:center;
+	margin-top: 5px;
+    color: #fff; 
+    font-size: 14px;
+    word-spacing: 4px;
+	display: flex;
+    width: 25%;
+    margin: 0 27% 0 auto
 }
+
+.kva-footer  a{
+	color:#fff;
+} 
 
 .kva-prefooter {
     width: 100%; 
@@ -2016,15 +2030,15 @@ ul.tree {
     transition: opacity 200ms;
 } 
 .cc_container .cc_btn {
-    padding: 8px 10px;
+    padding: 5px 10px;
     background-color: #0e600e;
     cursor: pointer;
     text-align: center;
     display: block;
-    width: 33%;
+    width: 30%;
     margin-left: 10px;
     float: right;
-    max-width: 120px;
+    max-width: 110px;
 }
 
 /****Media Queries****/
