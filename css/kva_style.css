@@ -1966,30 +1966,30 @@ ul.tree {
     animation-name: growDown;
 }
 .cc_banner-wrapper {
-    height: 75px;
+    height: 50px;
 }
 .cc_banner-wrapper {
     z-index: 9001;
     position: relative;
 }
 .cc_container {
-    background: #222;
-    color: #fff;
+    background-image: linear-gradient( #fff, #eee);
+    color: #000;
     font-size: 17px;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
     box-sizing: border-box;
 } 
 @media screen and (min-width: 768px){
 .cc_container {
-    padding: 15px 30px 15px;
+    padding: 5px 25px 2px;
 }
 .cc_container .cc_btn {
     padding: 8px 15px;
 }
 }
 .cc_container .cc_btn, .cc_container .cc_btn:visited {
-    color: #000;
-    background-color: #D8B446;
+    color: #fff;
+    background-color: #0e600e;
     transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
     -webkit-transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
     border-radius: 5px;
@@ -2017,7 +2017,7 @@ ul.tree {
 } 
 .cc_container .cc_btn {
     padding: 8px 10px;
-    background-color: #f1d600;
+    background-color: #0e600e;
     cursor: pointer;
     text-align: center;
     display: block;
@@ -2026,6 +2026,7 @@ ul.tree {
     float: right;
     max-width: 120px;
 }
+
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
