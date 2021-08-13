@@ -481,13 +481,6 @@ div.affix-bottom{
     z-index: -1;
 }
 
-/* .kva-footer p{
-    text-align:center;
-	margin-top: 5px;
-    color: #fff; 
-    font-size: 14px;
-    word-spacing: 4px;
-} */
  .kva-footer  span{
     text-align:center;
 	margin-top: 5px;
@@ -502,7 +495,9 @@ div.affix-bottom{
 .kva-footer  a{
 	color:#fff;
 } 
-
+.footer-tap{
+	padding:10px 0;
+}
 .kva-prefooter {
     width: 100%; 
     min-height: 2px;
