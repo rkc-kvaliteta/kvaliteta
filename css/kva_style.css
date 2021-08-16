@@ -1810,9 +1810,9 @@ section.modalWindow section.modalWrapper {
 	padding:5px;
 	float:right;
 }
-.Reset-btn img {
+/* .Reset-btn img {
 	width:18%;
-}
+} */
 .career-submit button{
 	float:right !important;
 	color:#333!important;
