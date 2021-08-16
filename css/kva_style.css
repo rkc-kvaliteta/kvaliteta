@@ -1810,6 +1810,9 @@ section.modalWindow section.modalWrapper {
 	padding:5px;
 	float:right;
 }
+.Reset-btn img {
+	width:18%;
+}
 .career-submit button{
 	float:right !important;
 	color:#333!important;
@@ -1852,6 +1855,7 @@ button:hover {
 .map-lable img{
 	width:auto !important;
 }
+
 /**Animater reset btn **/
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
