@@ -1857,8 +1857,9 @@ a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
 	/* margin: 30px auto 0; */
-	padding: 14px 15px;
+	/* padding: 14px 15px; */
 	/* color: #fff; */
+	padding:5px;
 	font-size:14px;
 	font-weight: bold;
 	text-align: center;
