@@ -2043,6 +2043,48 @@ ul.tree {
     max-width: 110px;
 }
 
+/* 17.08.2021 */
+
+ h4.Effect-text, #CiD-Area h4.Effect-text {
+  --interval: 1s;
+  display: block;
+  text-shadow: 
+    -1 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+#intro h4.Effect-text:nth-of-type(1), #CiD-Area h4.Effect-text:nth-of-type(1) {
+  color: #000;
+  --color1: #0e600e;
+  --color2: orangered;
+  --color3: mediumblue;
+  --color4: purple;
+  font-family: Gruppo;
+}
+
+#intro h4.Effect-text:nth-of-type(2), #CiD-Area h4.Effect-text:nth-of-type(2) {
+  color: #0e600e;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+  font-family: Bad Script;
+}
+
+
+
+@keyframes flicker {
+  50% {
+    color: #ccc;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
 /****Media Queries****/
 
 @media screen and (min-width: 0px) and (max-width:320px){
