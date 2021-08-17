@@ -2113,6 +2113,7 @@ ul.tree {
 .cookie-notice-message {
     display: block;
     line-height: 24px;
+	text-align:left;
 }
 .cookie-notice-button-container {
     position: relative;
