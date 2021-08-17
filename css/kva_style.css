@@ -2048,7 +2048,7 @@ ul.tree {
 
 /* 17.08.2021 */
 
-#intro h4.Effect-text, #CiD-Area h4.Effect-text, #cloud h4.Effect-text{
+#intro h4.Effect-text, #CiD-Area h4.Effect-text, #cloud h4.Effect-text, #kite-portalapps h4.Effect-text{
   --interval: 1s;
   display: block;
   text-shadow: 
@@ -2061,7 +2061,8 @@ ul.tree {
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-#intro h4.Effect-text:nth-of-type(1), #CiD-Area h4.Effect-text:nth-of-type(1), #cloud h4.Effect-text:nth-of-type(1) {
+#intro h4.Effect-text:nth-of-type(1), #CiD-Area h4.Effect-text:nth-of-type(1), #cloud h4.Effect-text:nth-of-type(1), 
+#kite-portalapps h4.Effect-text:nth-of-type(1) {
   color: #000;
   --color1: #0e600e;
   --color2: orangered;
@@ -2070,7 +2071,8 @@ ul.tree {
   font-family: Gruppo;
 }
 
-#intro h4.Effect-text:nth-of-type(2), #CiD-Area h4.Effect-text:nth-of-type(2), #cloud h4.Effect-text:nth-of-type(2) {
+#intro h4.Effect-text:nth-of-type(2), #CiD-Area h4.Effect-text:nth-of-type(2), #cloud h4.Effect-text:nth-of-type(2), 
+#kite-portalapps h4.Effect-text:nth-of-type(2) {
   color: #0e600e;
   --color1: pink;
   --color2: orangered;
@@ -2232,6 +2234,8 @@ ul.tree {
 		color: #fff; 
 		font-size: 14px;
 		word-spacing: 4px;
+		margin:0;
+		display:inline;
 	}
 }
 @media screen and (min-width: 320px) and (max-width:440px){
