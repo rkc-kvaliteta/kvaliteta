@@ -1803,12 +1803,15 @@ section.modalWindow section.modalWrapper {
 }
 .Reset-btn{
 	padding:10px 0;
+	width: 15%;
+    display: flex;
+    margin: 0 auto
 }
 .Reset-btn a{
 	border:1px solid #0e600e;
 	text-decoration:none;
 	padding:5px;
-	float:right;
+	/* float:right; */
 }
 /* .Reset-btn img {
 	width:18%;
