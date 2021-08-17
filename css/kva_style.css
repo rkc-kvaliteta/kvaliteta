@@ -2090,6 +2090,10 @@ ul.tree {
     float: left;
     width: 20%;
 }
+.kva-list a{
+    font-size: 20px;
+    margin-left: 20px;
+}
 
 /****Media Queries****/
 
