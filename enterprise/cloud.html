@@ -9,13 +9,13 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="cloud-content">
+				<div class="cloud-content" id="cloud">
 					<p><b>Kvaliteta offers Full Stack IT Infrastructure Solutions - “Edge Computing to Cloud”.</b></p>
 					<p>Kvaliteta provides the right combination of people, processes, systems, and technology across on-premise, cloud, the network, and security to maximize the value of your IT infrastructure and operations while simplifying the management of your hybrid IT environment. 
 						Kvaliteta is a value-added provider of solutions for OPDC, Collaboration Virtualization, Private/Public Clouds Systems & Network Management and Monitoring Platforms.</p>
 					<p>Our approach enables Enterprises to strategise, re-engineer, move and operate their business critical applications on cloud with Multicloud, Private or in a Hybrid setup.</p>
 					<p>Our services include: Cloud Assessment, Migration, Framework for building cloud native apps, Integration, Predictive Analysis, Incident Response Alert Correlation and Cloud Security. Our Analytical Tools, AI/ML Automation and DevOps Tool Chain support Public, Private, Multi & Hybrid Cloud.</p>
-					<h4><small>Click on different circle of the Cloud to learn a bit more about them.</small></h4>
+					<h4 class="Effect-text"><span>Click on different circle of the Cloud to learn a bit more about them.</span></h4>
 				</div>
 			</div> 
 		</div>
@@ -132,4 +132,10 @@
   offset: {top: 50}
 });
 
+</script>
+<script>
+const signs = document.querySelectorAll('.Effect-text')
+const randomIn = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1) + min)
+)
 </script>
