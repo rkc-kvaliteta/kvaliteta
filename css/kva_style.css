@@ -2041,7 +2041,7 @@ ul.tree {
     text-align: center;
     display: block;
     width: 30%;
-    margin-left: 10px;
+    margin: 20px 0;
     float: right;
     max-width: 110px;
 }
@@ -2378,6 +2378,11 @@ ul.tree {
 	.kite-img img, .CiDcontent-img img{
 		display:none;
 	}
+	/* 17.8.2021*/
+	.cc_banner-wrapper {
+		height: 70px;
+		display:block !important;
+	}
 }
 @media screen and (min-width: 540px) and (max-width:600px){
 	#nav2 .navbar-brand {
@@ -2413,6 +2418,11 @@ ul.tree {
 	section.modalWindow {
 		width:auto !important;
 	}
+	/* 17.8.2021*/
+	.cc_banner-wrapper {
+		height: 70px;
+		display:block !important;
+	}
 }
 @media screen and (min-width: 600px) and (max-width:767px){
 	#nav2 .navbar-brand {
@@ -2444,6 +2454,11 @@ ul.tree {
 	/*20.7.2020*/
 	section.modalWindow {
 		width:auto !important;
+	}
+	/* 17.8.2021*/
+	.cc_banner-wrapper {
+		height: 70px;
+		display:block !important;
 	}
 }
 @media screen and (min-width: 768px) and (max-width:800px){
