@@ -2229,6 +2229,9 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
+	.d-none{
+		display:none !important;
+	}
 	.Reset-btn {
 		padding: 10px 0;
 		width: 75%;
@@ -2321,6 +2324,9 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
+	.d-none{
+		display:none !important;
+	}
 	.Reset-btn {
 		padding: 10px 0;
 		width: 55%;
@@ -2404,6 +2410,9 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
+	.d-none{
+		display:none !important;
+	}
 	.Reset-btn {
 		padding: 10px 0;
 		width: 45%;
@@ -2463,6 +2472,9 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
+	.d-none{
+		display:none !important;
+	}
 	.Reset-btn {
 		padding: 10px 0;
 		width: 45%;
@@ -2512,6 +2524,9 @@ ul.tree {
 	.cc_banner-wrapper {
 		height: 70px;
 		display:block !important;
+	}
+	.d-none{
+		display:none !important;
 	}
 	.Reset-btn {
 		padding: 10px 0;
