@@ -2244,6 +2244,10 @@ ul.tree {
 	.btn-default{
 		margin:10px 0;
 	}
+	#techAreas, #kite-portalapps {
+		min-height: 250px;
+		position: relative;
+	}
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -2332,6 +2336,10 @@ ul.tree {
 	.btn-default{
 		margin:10px 0;
 	}
+	#techAreas, #kite-portalapps {
+		min-height: 250px;
+		position: relative;
+	}
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -2411,6 +2419,10 @@ ul.tree {
 	.btn-default{
 		margin:10px 0;
 	}
+	#techAreas, #kite-portalapps {
+		min-height: 250px;
+		position: relative;
+	}
 }
 @media screen and (min-width: 540px) and (max-width:600px){
 	#nav2 .navbar-brand {
@@ -2458,6 +2470,10 @@ ul.tree {
 		margin: 0 auto;
 	}
 	.footer {
+		position: relative;
+	}
+	#techAreas, #kite-portalapps {
+		min-height: 250px;
 		position: relative;
 	}
 }
