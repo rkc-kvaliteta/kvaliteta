@@ -2238,6 +2238,9 @@ ul.tree {
 	.footer {
 		position: relative;
 	}
+	.cc_container{
+		padding:0 10px;
+	}
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -2320,6 +2323,9 @@ ul.tree {
 	.footer {
 		position: relative;
 	}
+	.cc_container{
+		padding:5px;
+	}
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -2328,9 +2334,7 @@ ul.tree {
 	}
 	.navbar ul.nav li a {
 		color: #000;
-		/*font-size: 16px;*/
 		font-size:14px;
-		/* vertical-align: middle; */
 		padding-bottom: 5px;
 		padding-top: 20px;
 		text-align: center;
@@ -2394,6 +2398,9 @@ ul.tree {
 	}
 	.footer {
 		position: relative;
+	}
+	.cc_container{
+		padding:5px;
 	}
 }
 @media screen and (min-width: 540px) and (max-width:600px){
