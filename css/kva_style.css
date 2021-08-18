@@ -482,14 +482,14 @@ div.affix-bottom{
 }
 
  .kva-footer  span{
-    text-align:center;
 	margin-top: 5px;
     color: #fff; 
     font-size: 14px;
     word-spacing: 4px;
-	display: flex;
+	/* display: flex;
     width: 25%;
-    margin: 0 27% 0 auto
+    margin: 0 27% 0 auto; */
+	margin:0;
 }
 
 .kva-footer  a{
@@ -498,6 +498,7 @@ div.affix-bottom{
 } 
 .footer-tap{
 	padding:10px 0;
+	text-align:center;
 }
 .kva-prefooter {
     width: 100%; 
@@ -1472,9 +1473,9 @@ body {
 
 
 /********** 4.3 Mobile - Footer **********/
-footer{
+/* footer{
 	position:absolute;
-}
+} */
 
 /********** Mobile - . Contact **********/
 
@@ -2228,7 +2229,7 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
-	.kva-footer  span{
+	/* .kva-footer  span{
 		text-align:center;
 		margin-top: 5px;
 		color: #fff; 
@@ -2237,6 +2238,10 @@ ul.tree {
 		margin:0;
 		display:inline;
 	}
+	.footer-tap{
+		padding:10px 0;
+		text-align:center;
+	} */
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -2310,13 +2315,19 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
-	.kva-footer  span{
+	/* .kva-footer  span{
 		text-align:center;
 		margin-top: 5px;
 		color: #fff; 
 		font-size: 14px;
 		word-spacing: 4px;
+		margin:0;
+		display:inline;
 	}
+	.footer-tap{
+		padding:10px 0;
+		text-align:center;
+	} */
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -2383,6 +2394,19 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
+	/* .kva-footer  span{
+		text-align:center;
+		margin-top: 5px;
+		color: #fff; 
+		font-size: 14px;
+		word-spacing: 4px;
+		margin:0;
+		display:inline;
+	}
+	.footer-tap{
+		padding:10px 0;
+		text-align:center;
+	} */
 }
 @media screen and (min-width: 540px) and (max-width:600px){
 	#nav2 .navbar-brand {
