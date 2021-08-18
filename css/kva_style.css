@@ -2229,19 +2229,15 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
-	/* .kva-footer  span{
-		text-align:center;
-		margin-top: 5px;
-		color: #fff; 
-		font-size: 14px;
-		word-spacing: 4px;
-		margin:0;
-		display:inline;
+	.Reset-btn {
+		padding: 10px 0;
+		width: 75%;
+		display: flex;
+		margin: 0 auto;
 	}
-	.footer-tap{
-		padding:10px 0;
-		text-align:center;
-	} */
+	.footer {
+		position: relative;
+	}
 }
 @media screen and (min-width: 320px) and (max-width:440px){
 	
@@ -2315,19 +2311,15 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
-	/* .kva-footer  span{
-		text-align:center;
-		margin-top: 5px;
-		color: #fff; 
-		font-size: 14px;
-		word-spacing: 4px;
-		margin:0;
-		display:inline;
+	.Reset-btn {
+		padding: 10px 0;
+		width: 75%;
+		display: flex;
+		margin: 0 auto;
 	}
-	.footer-tap{
-		padding:10px 0;
-		text-align:center;
-	} */
+	.footer {
+		position: relative;
+	}
 }
 @media screen and (min-width: 440px) and (max-width:540px){
 
@@ -2386,27 +2378,23 @@ ul.tree {
 	section.modalWindow {
 		width:auto !important;
 	}
-	.kite-img img, .CiDcontent-img img{
+	/* .kite-img img, .CiDcontent-img img{
 		display:none;
-	}
+	} */
 	/* 17.8.2021*/
 	.cc_banner-wrapper {
 		height: 70px;
 		display:block !important;
 	}
-	/* .kva-footer  span{
-		text-align:center;
-		margin-top: 5px;
-		color: #fff; 
-		font-size: 14px;
-		word-spacing: 4px;
-		margin:0;
-		display:inline;
+	.Reset-btn {
+		padding: 10px 0;
+		width: 45%;
+		display: flex;
+		margin: 0 auto;
 	}
-	.footer-tap{
-		padding:10px 0;
-		text-align:center;
-	} */
+	.footer {
+		position: relative;
+	}
 }
 @media screen and (min-width: 540px) and (max-width:600px){
 	#nav2 .navbar-brand {
@@ -2447,6 +2435,15 @@ ul.tree {
 		height: 70px;
 		display:block !important;
 	}
+	.Reset-btn {
+		padding: 10px 0;
+		width: 45%;
+		display: flex;
+		margin: 0 auto;
+	}
+	.footer {
+		position: relative;
+	}
 }
 @media screen and (min-width: 600px) and (max-width:767px){
 	#nav2 .navbar-brand {
@@ -2483,6 +2480,15 @@ ul.tree {
 	.cc_banner-wrapper {
 		height: 70px;
 		display:block !important;
+	}
+	.Reset-btn {
+		padding: 10px 0;
+		width: 30%;
+		display: flex;
+		margin: 0 auto;
+	}
+	.footer {
+		position: relative;
 	}
 }
 @media screen and (min-width: 768px) and (max-width:800px){
@@ -2536,6 +2542,9 @@ ul.tree {
 	.modal.right .modal-dialog {
 		width: 500px;
 	}	
+	.footer {
+		position: relative;
+	}
 }
 @media screen and (min-width: 800px) and (max-width:991px){
 	.logo-bar .logo-1 {
