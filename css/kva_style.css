@@ -2082,16 +2082,15 @@ ul.tree {
 .Cid-Arh{
 	border: 2px solid #0e600e;
 	padding:5px;
-    float: left;
     width: 20%;
 }
 .kva-list a{
     font-size: 20px;
     margin-left: 20px;
 }
-/* Sp-IT security allot*/
+ /* Sp-IT security allot*/
 
-.cookie-notice {
+/*.cookie-notice {
     display: block;
     position: fixed;
     bottom: 0;
@@ -2144,7 +2143,7 @@ ul.tree {
     height: 100%;
     background-color: #fff;
     transition: all .25s ease;
-}
+} */
 
 /****Media Queries****/
 
