@@ -2073,8 +2073,6 @@ ul.tree {
   font-family: Bad Script;
 }
 
-
-
 @keyframes flicker {
   50% {
     color: #ccc;
@@ -2586,6 +2584,12 @@ ul.tree {
 	.footer {
 		position: relative;
 	}
+	.Reset-btn {
+		padding: 10px 0;
+		width: 25%;
+		display: flex;
+		margin: 0 auto;
+	}
 }
 @media screen and (min-width: 800px) and (max-width:991px){
 	.logo-bar .logo-1 {
@@ -2615,5 +2619,14 @@ ul.tree {
 		padding-left:28%;
 		padding-bottom:5%;
 		font-size:11px;
+	}
+	.footer {
+		position: relative;
+	}
+	.Reset-btn {
+		padding: 10px 0;
+		width: 25%;
+		display: flex;
+		margin: 0 auto;
 	}
 }
