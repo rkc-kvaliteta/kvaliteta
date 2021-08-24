@@ -29,31 +29,14 @@ ul, li {
 a, a:focus, a:hover{
   color:#0e600e;
 }
-
 section {
 	margin-top:25px;
 	margin-bottom:25px;
 }
-
-/*section.top-space {
-	padding-top:3%;
-}
-
-section ul li:before {
-  content: '';
-  font-family: '';
-  float: left;
-}15.4.2020*/
-
-/* section ul li{
-	
-} */
-
 section ul li i{
 	color: #0e600e;
 	text-indent:-1em;
 }
-
 .page-header{
 	border-bottom: 1px solid #0e600e;
 }
@@ -64,7 +47,6 @@ blockquote{
 
 .blockquote-reverse,
 blockquote.pull-right {
-	/* border-right-color: #0e600e; */
 	border:none;
 }
 
@@ -79,7 +61,6 @@ blockquote.pull-right {
     border:2px solid #0e600e !important;
     background-color: #0e600e;
     color: #fff !important;
-
 }
 .btn-default:hover
 {
@@ -123,7 +104,6 @@ blockquote.pull-right {
 }
 .btn-search
 {
-    /*border:1px solid #fff !important;*/
     background-color: #0e600e !important;
     color: #fff !important;
 }
@@ -140,7 +120,6 @@ border-radius:0;
 
 /*************  CANVAS *************/
 canvas {
-  /* max-width: 100%; */
   height: auto;
 }
 
@@ -164,7 +143,6 @@ svg a:hover path {
 
 /*************  CANVAS *************/
 canvas {
-  /* max-width: 100%; */
   height: auto;
 }
 svg{
@@ -186,7 +164,6 @@ a.thumbnail:active{
 .thumbnail {
 	border-radius:0;
 }
-
 
 .thumbnail .caption-slide h3, 
 .carousel .caption-slide h3 {
@@ -211,7 +188,6 @@ a.thumbnail:active{
   top:0;
   left:0;
   color:#FFFFFF !important;
-  /* z-index:2; */
   width:100%;
   height:100%;
   padding:10px;
@@ -245,8 +221,6 @@ a.thumbnail:active{
 	min-height:20px;
 }
 
-
-
 	/************* 2.2 Navigation - Logo Branding *************/
 		/**********************************
 		Responsive navbar-brand image CSS
@@ -268,7 +242,6 @@ a.thumbnail:active{
 .navbar ul.nav li a {
     color: #000;
     font-size: 16px;
-    /* vertical-align: middle; */
 	padding-bottom:10px;
 	padding-top:10px;
 	text-align: center;
@@ -279,9 +252,7 @@ a.thumbnail:active{
 	border:1px solid #ddd;
 	font-weight:501;
 } 
-/* .nav-i a{
-	border:none !important;
-} */
+
 #nav2 .nav li.active > a, #nav2 .nav li.open > a {
     color: #0e600e;
 	font-weight:501;
@@ -424,10 +395,6 @@ nav {
   width: 100%;
 }
 
-/*nav.affix-top {
-  position: absolute;
-}15.4.2020*/
-
 nav.affix {
   position: fixed;
   top: 0;
@@ -440,18 +407,7 @@ nav.affix {
 nav.affix-bottom{
   position: relative;
 }
-/*div.affix {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999 !important;
-  transition: all .6s ease-in-out;
-  -webkit-transition: all .6s ease-in-out;
-  background-color:#fff;
-}
-div.affix-bottom{
-  position: relative;
-}*/
+
 /************* 3. Footer *************/
  .footer {
 	bottom: 0;
@@ -462,8 +418,6 @@ div.affix-bottom{
  .kva-footer {
     margin:0px auto;
     width:100%;
-    /* height:auto;
-    background-color:#fff; */
     float:left;
     padding-bottom:20px;
     position: relative;
@@ -486,9 +440,6 @@ div.affix-bottom{
     color: #fff; 
     font-size: 14px;
     word-spacing: 4px;
-	/* display: flex;
-    width: 25%;
-    margin: 0 27% 0 auto; */
 	margin:0;
 }
 
@@ -520,9 +471,7 @@ div.affix-bottom{
     left:0;
 }
 /**/
-/* .carousel-inner{
-	height:287.498px;
-} */
+
 .carousel-inner > .item > img{
 	height:287.498px;
 	width:100%;
@@ -571,14 +520,11 @@ div.affix-bottom{
 }
 /**/
 .carousel{
-	/*margin-top:20px;*/
 	z-index: 0;
-	/*width:980px;*/
 	width:100%;
 }
 .carousel-caption {
     text-shadow: none;
-    /* font-size: 1.5em;  */
 	font-size: 28px;
 	font-weight:500;
 	text-align:justify !important;	
@@ -1629,7 +1575,7 @@ section.top-space{
 .mt-20{
 	margin-top:20px;
 }
-.model p, .partner-model p, #cloud p, .dcim p{
+.model p, .partner-model p, #cloud p, .dcim p, #intro p{
 	text-align:justify;
 }
 .p-0{
@@ -1640,6 +1586,9 @@ section.top-space{
 }
 .mtop-0{
 	margin-top:0px !important;
+}
+#k-frame{
+	padding:20px 0;
 }
 .dcim-img img{
 	display: block;
@@ -1653,29 +1602,11 @@ section.top-space{
 .cloud-content{
 	margin-top:10px;
 }
-/* #kite{
-	margin-top:20%;
-}
-#enterprise{
-	margin-top:12%;
-}
-#Tech-sdaas{
-	margin-top:2%;
-}
-#cid{
-	margin-top:8%;
-}
-#telecom{
-	margin-top:4%;
-} */
+
 .enter-content h3{
 	font-weight:bold;
 }
-/* #Iaas, #Paas, #Cloud, #Oss{
-	padding:10px;
-	border:1px solid #0e600e;
-	box-shadow: 4px 0px 4px 0px #0e600e;
-} */
+
 .br-color{
 	outline: 0;
 	border: none;
