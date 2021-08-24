@@ -1575,7 +1575,7 @@ section.top-space{
 .mt-20{
 	margin-top:20px;
 }
-.model p, .partner-model p, #cloud p, .dcim p, #intro p{
+.model p, .partner-model p, #cloud p, .dcim p, #intro p, #spIT-text p{
 	text-align:justify;
 }
 .p-0{
