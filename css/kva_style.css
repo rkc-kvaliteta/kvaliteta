@@ -2046,10 +2046,14 @@ ul.tree {
     width: 20%;
 	margin:10px 0;
 }
-.kva-list a{
-    font-size: 20px;
+.kva-list li a{
+    font-size: 16px;
     margin-left: 20px;
 	text-decoration:none;
+}
+.kva-list li a i{
+	font-size:20px;
+	margin-left:20px;
 }
 
 /****Media Queries****/
