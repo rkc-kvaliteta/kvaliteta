@@ -1531,16 +1531,12 @@ section.top-space{
 .carousel-control .glyphicon-chevron-left{
 	margin-left: -45px !important;
 }
-/*******/
-/*.bread-samp ul li{
-	background:#eee;
-}*/
+
 .bread-samp ul li{
 	display:inline-block;
 }
 .bread-samp ul li a{
 	color:#333;
-	/*padding:10px;*/
 }
 .bread-samp ul.samp-menu li+li:before{
 	padding: 8px;
