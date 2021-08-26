@@ -2013,6 +2013,7 @@ ul.tree {
   will-change: filter, color;
   filter: saturate(60%);
   animation: flicker steps(100) var(--interval) 1s infinite;
+  font-size:18px;
 }
 
 #intro span.Effect-text:nth-of-type(1), #CiD-Area span.Effect-text:nth-of-type(1), #cloud span.Effect-text:nth-of-type(1), 
@@ -2048,6 +2049,7 @@ ul.tree {
 .kva-list a{
     font-size: 20px;
     margin-left: 20px;
+	text-decoration:none;
 }
 
 /****Media Queries****/
