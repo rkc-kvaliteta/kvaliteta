@@ -1998,7 +1998,7 @@ ul.tree {
   --color4: magenta;
 } */
 
-#intro span.Effect-text, #CiD-Area span.Effect-text, #cloud span.Effect-text, #kite-portalapps span.Effect-text, #techAreas span.Effect-text{
+.Hint-text span.Effect-text{
   --interval: 1s;
   display: block;
   text-shadow: 
@@ -2012,8 +2012,7 @@ ul.tree {
   font-size:18px;
 }
 
-#intro span.Effect-text:nth-of-type(1), #CiD-Area span.Effect-text:nth-of-type(1), #cloud span.Effect-text:nth-of-type(1), 
-#kite-portalapps span.Effect-text:nth-of-type(1), #techAreas span.Effect-text:nth-of-type(1) {
+.Hint-text span.Effect-text:nth-of-type(1) {
   color: #000;
   --color1: #0e600e;
   --color2: orangered;
@@ -2021,8 +2020,7 @@ ul.tree {
   --color4: purple;
 }
 
-#intro span.Effect-text:nth-of-type(2), #CiD-Area span.Effect-text:nth-of-type(2), #cloud span.Effect-text:nth-of-type(2), 
-#kite-portalapps span.Effect-text:nth-of-type(2), #techAreas span.Effect-text:nth-of-type(2) {
+.Hint-text span.Effect-text:nth-of-type(2) {
   color: #0e600e;
   --color1: pink;
   --color2: orangered;
