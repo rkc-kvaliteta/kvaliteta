@@ -2038,7 +2038,8 @@ ul.tree {
 	border: 2px solid #0e600e;
 	padding:5px;
     width: 20%;
-	margin:10px 0;
+	margin:10px 10px;
+	float:left;
 }
 .kva-list li a{
     font-size: 16px;
