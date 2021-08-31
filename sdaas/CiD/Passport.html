@@ -69,6 +69,22 @@
 						</div>
 					</div>
 				</div>
+				
+				<div id="Modal-id" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">YouTube Video</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+							  <div class="embed-responsive embed-responsive-16by9">
+								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5zD0MQatSBM" allowfullscreen></iframe>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
 			
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="cid-img">
@@ -109,4 +125,23 @@
 	$('.navbar-lower').affix({
 		offset: {top: 50}
 	});
+</script>
+<script>
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#TrafficVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#TrafficVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#TrafficVideo").attr('src', url);
+    });
+});
 </script>
