@@ -39,6 +39,7 @@
 							<li><i class="fas fa-chevron-right"></i> Highest Level Security Checks/Watch Lists</li>
 							<li><i class="fas fa-chevron-right"></i> Accurate information populates within seconds</li>
 							<br />
+							<p><b>Use case Airport management system</b></p>
 							<li><i class="fas fa-chevron-right"></i> <a href="https://youtu.be/3-Rsv4rSJFg?t=74" target="_blank" title="Youtube"><i class="fab fa-youtube"></i> - Watch our youtube video</a></li>
 						</ul>
 					</div>
@@ -79,7 +80,7 @@
 							</div>
 							<div class="modal-body">
 							  <div class="embed-responsive embed-responsive-16by9">
-								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5zD0MQatSBM" allowfullscreen></iframe>
+								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5zD0MQatSBM" allowscriptaccess="always" allow="autoplay" allowfullscreen></iframe>
 							  </div>
 							</div>
 						</div>
@@ -143,5 +144,19 @@ $(document).ready(function(){
     $("#myModal").on('show.bs.modal', function(){
         $("#TrafficVideo").attr('src', url);
     });
+});
+</script>
+<script>
+$(document).ready(function() {
+  var $videoSrc;  
+  $('.video-btn').click(function() {
+      $videoSrc = $(this).data( "src" );
+  });
+  $('#MakeModal').on('shown.bs.modal', function (e) {
+    $("#video").attr('src',$videoSrc + "?autoplay=1&modestbranding=1&showinfo=0" ); 
+  })
+  $('#MakeModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src',$videoSrc); 
+  }) 
 });
 </script>
