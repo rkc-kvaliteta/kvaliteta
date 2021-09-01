@@ -29,12 +29,12 @@
 							<li><i class="fas fa-chevron-right"></i> MRZ Reading</li>
 							<li><i class="fas fa-chevron-right"></i> Document Classification</li>
 							<li><i class="fas fa-chevron-right"></i> Document Verification
-								<a href="#myModal" target="_blank" title="youtube" data-toggle="modal"><i class="fab fa-youtube"></i> - Watch youtube video</a>
+								<a class="cid-popup" href="#myModal" target="_blank" title="youtube" data-toggle="modal" data-src="https://www.youtube.com/embed/z5eDPTdJwPM"><i class="fab fa-youtube"></i> - Watch youtube video</a>
 							</li>
 							<li><i class="fas fa-chevron-right"></i> Ultraviolet & Near Infrared Checks</li>
 							<li><i class="fas fa-chevron-right"></i> Digital Data</li>
 							<li><i class="fas fa-chevron-right"></i> Authentication to Identify Fraudulent ID’s
-								<a href="#Modal-id" target="_blank" title="youtube" data-toggle="modal"><i class="fab fa-youtube"></i> - Watch youtube video</a>
+								<a class="cid-popup" href="#myModal" target="_blank" title="youtube" data-toggle="modal" data-src="https://www.youtube.com/embed/5zD0MQatSBM"><i class="fab fa-youtube"></i> - Watch youtube video</a>
 							</li>
 							<li><i class="fas fa-chevron-right"></i> Highest Level Security Checks/Watch Lists</li>
 							<li><i class="fas fa-chevron-right"></i> Accurate information populates within seconds</li>
@@ -51,11 +51,11 @@
 							<a href="https://www.acuant.com/assureid-identity-verification/"><img src="images/partners/acuant_logo.jpg" class="img-responsive"></a>
 						</div>
 						
-					</div>
+					</div> 
 				</div>
 				
 				<!-- popup -->
-				<div id="myModal" class="modal fade">
+				<div id="myModal" class="modal fade" aria-labelledby="myModalLabel">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -64,14 +64,14 @@
 							</div>
 							<div class="modal-body">
 							  <div class="embed-responsive embed-responsive-16by9">
-								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/z5eDPTdJwPM" allowfullscreen></iframe>
+								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="" allowfullscreen></iframe>
 							  </div>
 							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div id="Modal-id" class="modal fade">
+				<!-- <div id="Modal-id" class="modal fade">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -80,12 +80,12 @@
 							</div>
 							<div class="modal-body">
 							  <div class="embed-responsive embed-responsive-16by9">
-								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5zD0MQatSBM" allowscriptaccess="always" allow="autoplay" allowfullscreen></iframe>
+								<iframe id="TrafficVideo" class="embed-responsive-item" width="560" height="315" src="" allowscriptaccess="always" allow="autoplay" allowfullscreen></iframe>
 							  </div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="cid-img">
@@ -128,35 +128,20 @@
 	});
 </script>
 <script>
-$(document).ready(function(){
-    /* Get iframe src attribute value i.e. YouTube video url
-    and store it in a variable */
-    var url = $("#TrafficVideo").attr('src');
-    
-    /* Assign empty url value to the iframe src attribute when
-    modal hide, which stop the video playing */
-    $("#myModal").on('hide.bs.modal', function(){
-        $("#TrafficVideo").attr('src', '');
-    });
-    
-    /* Assign the initially stored url back to the iframe src
-    attribute when modal is displayed again */
-    $("#myModal").on('show.bs.modal', function(){
-        $("#TrafficVideo").attr('src', url);
-    });
-});
-</script>
-<script>
-$(document).ready(function() {
-  var $videoSrc;  
-  $('.video-btn').click(function() {
-      $videoSrc = $(this).data( "src" );
-  });
-  $('#MakeModal').on('shown.bs.modal', function (e) {
-    $("#video").attr('src',$videoSrc + "?autoplay=1&modestbranding=1&showinfo=0" ); 
-  })
-  $('#MakeModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src',$videoSrc); 
-  }) 
-});
+$(document).ready(function () {
+        var $videoSrc;
+        $(".cid-popup").click(function () {
+          $videoSrc = $(this).data("src");
+        });
+        $("#myModal").on("shown.bs.modal", function (e) {
+          $("#TrafficVideo").attr(
+            "src",
+            $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+          );
+        });
+        $("#myModal").on("hide.bs.modal", function (e) {
+          $("#TrafficVideo").attr("src", $videoSrc);
+        });
+      });
+	  
 </script>
