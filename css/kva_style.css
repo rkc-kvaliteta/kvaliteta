@@ -1497,8 +1497,11 @@ width:100% !important;
 	background:transparent;
 	margin-right:0PX;
 }
-section.top-space{
+/* section.top-space{
 	margin:0px 0 25px 0 !important;
+} */
+section.top-space{
+	margin:0px !important;
 }
 /****Kite-breadcrumb****/
 
