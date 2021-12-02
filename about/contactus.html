@@ -150,75 +150,6 @@
 
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 			<div class="plainbox">
-				
-				<!-- <form id="contact-form" name="Contactform" method="post" action="" enctype="text/plain" onsubmit="return submitfn()">
-					<div class="form-group">
-						<label for="username">  Name <span class="required_lab">*</span></label> 
-						<input type="text" class="form-control required" size="30" id="username" Name="name" placeholder="Full Name" required> 
-					</div>
-					<div class="form-group">
-						<label for="usermail">Email <span class="required_lab">*</span></label>
-						<input type="text" class="form-control required" size="30" id="usermail" Name="MailId" placeholder="E-mail" required>
-					</div>
-					<div class="form-group">
-						<label for="contactno">Contact No<span class="required_lab">*</span></label>
-						<input type="text" class="form-control required" size="30" id="contactno" Name="ContactNo" placeholder="Contact No." required>
-					</div>
-					<div class="form-group">
-						<label for="query">Query</label>
-						<select class="form-control required" id="query">
-							<option>--Select--</option>
-							<option>Sales Related Query</option>
-							<option>General Information</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<textarea class="form-control required" rows="6" id="comment" Name="Query" placeholder="comment" required></textarea> 
-						<div id="error_message"></div>
-					</div>		
-					<input type="button" value="Submit" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/>
-					</form>
-					
-					<div id="success-msg">
-						Thanks for contacting us!<br/>
-						We will get back to you soon!
-					</div> -->
-				
-				<!--14.9.2020 -->
-				 <!-- <form method="POST" enctype="text/plain"  onsubmit="return submitUserForm();" action="mailto:saranya@kvaliteta.in?subject=Enquiry Request">
-
-					<div class="form-group">
-						<label for="username">Name <span class="required_lab">*</span></label> 
-						<input type="text" class="form-control required" id="username" name="username" placeholder="Full Name" required> 
-					</div>
-					<div class="form-group">
-						<label for="usermail">Email <span class="required_lab">*</span></label>
-						<input type="email" class="form-control required" id="usermail" name="usermail" placeholder="E-mail" required>
-					</div>
-					<div class="form-group">
-						<label for="contactno">Contact No<span class="required_lab">*</span></label>
-						<input type="text" class="form-control required" id="contactno" name="contactno" placeholder="Contact No." required>
-					</div>
-					<div class="form-group">
-						<label for="query">Query</label>
-						<select class="form-control required" id="query" name="query">
-							 <option value="" selected  disabled>selected a option</option>
-							<option>Sales Related Query</option>
-							<option>General Information</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<textarea class="form-control required" rows="6" id="comment" name="comment" placeholder="comment" required></textarea>
-					</div>	
-
-				<div class="g-recaptcha" data-sitekey="6LfN7sQZAAAAAGlu41OTYP8dbsbU_UPPh39-PBbX" required></div>	
-				
-					<!-- <input type="button" value="Submit" class="btn btn-default btn-lg btn-block toggle-disabled" onclick="sendEmail()" disabled/> 
-					 <button type="submit" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" disabled>
-						<i class="fa fa-paper-plane"></i>&nbsp;Send
-					</button> 
-					<div id="g-recaptcha-error"></div>
-			</form>  -->
 			
 			<!-- 25.11.2020 -->
 				<form action="mailto:info@kvaliteta.in?subject=Enquiry Request" method="post" enctype="text/plain" onsubmit="return submitUserForm();">
@@ -247,18 +178,12 @@
 						<textarea class="form-control required" rows="6" id="comment" name="comment" placeholder="comment" required></textarea>
 					</div>	
 					
-					<!-- <div class="g-recaptcha" data-sitekey="6LfN7sQZAAAAAGlu41OTYP8dbsbU_UPPh39-PBbX" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div> -->
-					
 					<button type="submit" class="btn btn-default button-success pure-button button-xlarge toggle-disabled" onclick="sendEmail()" disabled>
 						<i class="fa fa-paper-plane"></i>&nbsp;Send
 					</button> 
 					
 				</form>
 				
-				<!-- <div class="contact-mail">
-					<i class="fa fa-address-book"></i>
-					<p>"If you would like to contact us, please email <a href="MAILTO:info@kvaliteta.in">info@kvaliteta.in</a>."
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -273,66 +198,6 @@
 });
 </script>
 
-<script>
-function submitUserForm() {
-    var response = grecaptcha.getResponse();
-    if(response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-        return false;
-    }
-    return true;
-}
- 
-function verifyCaptcha() {
-    document.getElementById('g-recaptcha-error').innerHTML = '';
-}
-</script>
-
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  -->
-<script src="js/smtp.js"></script> 
-<script>
-function sendEmail() {
-var username= document.getElementById("username").value
-var usermail= document.getElementById("usermail").value
-var contactno= document.getElementById("contactno").value
-var query= document.getElementById("query").value
-var comment= document.getElementById("comment").value
-var error_message = document.getElementById("error_message");
-  
-  error_message.style.padding = "10px";
-
-var text;
- 
-  if(comment.length <= 100){
-    text = "Please Enter More Than 100 Characters";
-    error_message.innerHTML = text;
-    return false;
-  }else{
-	error_message.style.display="none";
-  }
-
-
-    Email.send({
-    Host: "smtp.gmail.com",
-    Username : "jsaranya701@gmail.com",
-    Password : "Qwerty@23",
-    To : "info@kvaliteta.in",
-    From : "jsaranya701@gmail.com",
-    Subject : "query",
-    Body : 'Name :' +(username)+ " <br/> " +'EmailID :' + (usermail)+ " <br/> "+'Contact.No :' + (contactno) + " <br/> " +'Comment :' + (comment),	
-	
-    }).then(
-       <!-- message => alert("mail sent successfully") -->
-			function(data){
-				$('#success-msg').fadeIn().appand(data);
-				setTimeout(function() {
-					$('#success-msg').fadeOut("slow");
-				}, 2000 );
-			}
-    );
-	
-}
-</script>
 <script>
  $(document).on('change keyup', '.required', function(e){
    let Disabled = true;
