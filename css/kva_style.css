@@ -1878,6 +1878,7 @@ ul.tree {
 }
 #Rms-clickable img{
 	width:100%;
+	margin-top:10px;
 }
 #kite-rms ul li a, #kite-isms ul li a{
 	font-weight: bold;
